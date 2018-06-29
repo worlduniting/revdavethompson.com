@@ -1,19 +1,46 @@
 {
-  "name": "static-heroku-nodejs",
-  "version": "0.0.0",
-  "description": "static-heroku-nodejs\r ====================",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Yankovsky/static-heroku-nodejs.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Yankovsky/static-heroku-nodejs/issues"
-  },
-  "homepage": "https://github.com/Yankovsky/static-heroku-nodejs"
+    "title": "Rev. Dave Thompson: Official Site",
+    "name": "revdavethompson-com",
+    "version": "0.0.1",
+    "description": "Code and Assets for revdavethompson.com.",
+    "keywords": [
+        "minister",
+        "human",
+        "peacemaker",
+        "peace",
+        "theme",
+        "reverend"
+    ],
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "homepage": "https://github.com/worlduniting/revdavethompson.com",
+    "bugs": {
+        "url": "https://github.com/worlduniting/revdavethompson.com/issues"
+    },
+    "license": "MIT",
+    "author": "Rev. Dave Thompson",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/worlduniting/revdavethompson.com.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.1.1",
+        "font-awesome": "4.7.0",
+        "jquery": "3.3.1",
+        "jquery.easing": "^1.4.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.24.3",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.9.4",
+        "gulp-header": "2.0.5",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "4.0.1",
+        "gulp-uglify": "3.0.0"
+    }
 }
