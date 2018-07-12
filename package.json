@@ -21,6 +21,9 @@
     },
     "license": "MIT",
     "author": "Rev. Dave Thompson",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
     "repository": {
         "type": "git",
         "url": "git://github.com/worlduniting/revdavethompson.com.git"
