@@ -20,14 +20,17 @@
 @mixin heading-font {
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+@mixin bad-script-font {
+  font-family: 'Bad Script', cursive;
+  font-size: 30px !important;
+  font-weight: 700;
+}
 
 
 
 
 @mixin bad-font {
   font-family: 'Bad Script', cursive;
-  font-size: 30px !important;
-  font-weight: 700;
 }
 @mixin megrim-font {
 font-family: 'Megrim', cursive;

@@ -13,7 +13,7 @@
   }
   .navbar-brand {
     color: lighten($primary, 40%);
-    @include bad-font;
+    @include bad-script-font;
     &.active,
     &:active,
     &:focus,
@@ -32,7 +32,7 @@
         @include heading-font;
         &.active,
         &:hover {
-          color: $primary;
+          color: lighten($primary, 40%);
         }
       }
     }
