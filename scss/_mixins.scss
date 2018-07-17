@@ -22,21 +22,11 @@
 }
 @mixin bad-script-font {
   font-family: 'Bad Script', cursive;
-  font-size: 30px !important;
-  font-weight: 700;
-}
-
-
-
-
-@mixin bad-font {
-  font-family: 'Bad Script', cursive;
 }
 @mixin megrim-font {
-font-family: 'Megrim', cursive;
-  font-weight: 700;
+  font-family: 'Megrim', cursive;
 }
-@mixin nova-font {
-font-family: 'Nova Slim', cursive;
+@mixin raleway-font {
+  font-family: 'Raleway', cursive;
 }
 

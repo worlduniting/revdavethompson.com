@@ -12,8 +12,9 @@
     @include heading-font;
   }
   .navbar-brand {
-    color: lighten($primary, 40%);
-    @include bad-script-font;
+    color: lighten($primary, 20%);
+    @include raleway-font;
+    font-size: 30px !important;
     &.active,
     &:active,
     &:focus,
