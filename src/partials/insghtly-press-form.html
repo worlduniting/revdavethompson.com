@@ -1,17 +1,16 @@
 <form name="insightly_web_to_lead" action="https://crm.na1.insightly.com/WebToLead/Create" method="post">
-  <div class="row mb-4">
-    <div class="col-md-5">
-      <label for="insightly_industry" class="form-label">Press or Media *</label>
-      <select class="form-select" aria-label="Default select reason" required>
-        <option selected>(please select one)</option>
-        <option value="1">Press</option>
-        <option value="2">Media</option>
-      </select>
-    </div>
+  <input type="hidden" name="formId" value="ySErMBBgL8ZKlRsXYqDaZg==" />
+  <div class="col-md-5">
+    <label for="insightly_industry" class="form-label">Press, Media, or PR *</label>
+    <select id="insightly_industry" name="Industry" class="form-select" aria-label="Default select reason" required>
+      <option selected>(please select one)</option>
+      <option value="Press">Press</option>
+      <option value="Media">Media</option>
+      <option value="Public-Relations">Public/Relations</option>
+    </select>
   </div>
   <div class="row mb-4">
     <div class="col-md-5 mb-3">
-      <input type="hidden" name="formId" value="ySErMBBgL8ZKlRsXYqDaZg==" />
       <label for="insightly_firstName" class="form-label">First Name *</label>
       <input id="insightly_firstName" class="form-control" name="FirstName" type="text" required/>
     </div>
@@ -41,7 +40,7 @@
     </div>
   </div>
 
-    <input type="hidden" class="form-control" id="insightly_ResponsibleUser" name="ResponsibleUser" value="184235"/>
+    <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="184235"/>
     <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="393245"/>
     <button type="submit" class="btn btn-primary mb-3 text-white bg-primary" value="Submit">Send Your Message</button>
 </form>
