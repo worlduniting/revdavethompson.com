@@ -10,20 +10,23 @@ $theme-colors: (
     "dark": #000000
 );
 
-body.front {
-  background: url(/img/rdt-mastfade2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1;
-  background-color: rgba(43, 40, 40, .5);
+#carousel-front {
+  background: url(/img/rdt-mastfade3.jpg) no-repeat center center fixed;
+  background-color: rgba(43, 40, 40, .6);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   box-shadow: inset 0 0 6rem rgba(0, 0, 0, .9);
+  height: 43em;
 }
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@media (min-width: 768) {
+  #carousel-front {
+    background: url(/img/rdt-mastfade3.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 4em;
+    width: 100%;
+  }
+}
 
 body {
     padding-top: 40px;
@@ -31,7 +34,8 @@ body {
 
 strong {
   font-size: 1em;
-  font-family:Raleway;
+  font-family: Raleway;
+  font-weight: 900;
 }
 
 .footer {
@@ -49,7 +53,7 @@ strong {
 }
 
 #mainNav .navbar-brand {
-  margin-right: 2em;
+  margin-right: 1em;
   font-size: 1.75em;
 }
 
@@ -417,7 +421,7 @@ footer {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -455,7 +459,8 @@ img.marketing {
 /* Featurettes
 ------------------------- */
 .featurette {
-  padding: 0 30px;
+  padding: 0 30p 50px 30px;
+  text-align: center;
 }
 
 .featurette-divider {
