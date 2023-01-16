@@ -16,7 +16,6 @@ export default function Navigation() {
           <AnimatedText
             text="Rev. Dave Thompson"
             textStyles={myFont.className}
-            delay="0"
           />
         </Link>
 
