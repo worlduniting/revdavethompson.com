@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 
+type Props = {
+  text: string;
+  textStyles: string;
+}
+
 // Pass the text to be animated and the CSS classes to style
-const AnimatedText = ({ text, textStyles }) => {
+const AnimatedText = ({ text, textStyles }:Props) => {
   const letters = Array.from(text);
 
   const container = {

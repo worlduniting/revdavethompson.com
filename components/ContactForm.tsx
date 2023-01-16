@@ -7,7 +7,7 @@ import PhoneInput from 'react-phone-number-input'
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 
 export default function ContactForm() {
-  
+
   return (
     <>
       <div className="mt-10 sm:mt-0">
