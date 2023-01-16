@@ -9,7 +9,7 @@ export default function SpeedDialBtmRt() {
     <div data-dial-init className="fixed right-6 bottom-6 group">
       <div
         id="speed-dial-menu-vertical"
-        className="flex flex-col items-center hidden mb-4 space-y-2"
+        className="flex flex-col items-center mb-4 space-y-2"
       >
         {/* YouTube Button */}
         <button

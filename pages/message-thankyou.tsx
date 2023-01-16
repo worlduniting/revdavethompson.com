@@ -18,7 +18,6 @@ export default function messageThankyou() {
               <AnimatedText
                 text="Thank You!"
                 textStyles={myFont.className}
-                delay="2"
               />
             </h1>
           </div>
