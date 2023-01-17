@@ -2,7 +2,6 @@ import Header from "../../components/Header";
 import earth from "../../public/svgs/urban-earth.svg";
 import rdtAvatar from "../../public/svgs/rdt-avatar.svg";
 import Image from "next/image";
-import AboutRDTTimeline from "../../components/AboutRDTTimeline";
 import HUMANTimeline from "../../components/HUMANTimeline";
 import { motion } from "framer-motion";
 
