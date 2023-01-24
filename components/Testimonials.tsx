@@ -12,9 +12,9 @@ export default function Testimonials() {
     <section className="bg-slate-100 dark:text-zinc-900 dark:bg-zinc-600">
       <div className="container px-6 py-12 mx-auto">
         <motion.h2
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
           className="text-4xl text-right dark:text-white"
           whileHover={{ scale: 1.05 }}
         >
@@ -27,9 +27,9 @@ export default function Testimonials() {
               <div className="grid content-center gap-4">
                 {/* Testimony */}
                 <motion.div
-                  initial={{ opacity: 0, x: -30 }}
+                  initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1.5 }}
+                  transition={{ duration: 1 }}
                   className="p-6 rounded shadow-md bg-slate-100 dark:bg-slate-200"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -53,9 +53,9 @@ export default function Testimonials() {
 
                 {/* Testimony */}
                 <motion.div
-                  initial={{ opacity: 0, x: -30 }}
+                  initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1.5 }}
+                  transition={{ duration: 1 }}
                   className="p-6 rounded shadow-md bg-slate-50 dark:bg-slate-200"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -84,7 +84,7 @@ export default function Testimonials() {
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1.5 }}
+                  transition={{ duration: 1 }}
                   className="p-6 rounded shadow-md bg-slate-50 dark:bg-slate-200"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -107,7 +107,7 @@ export default function Testimonials() {
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1.5 }}
+                  transition={{ duration: 1 }}
                   className="p-6 rounded shadow-md bg-slate-50 dark:bg-slate-200"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -135,7 +135,7 @@ export default function Testimonials() {
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1.5 }}
+                  transition={{ duration: 1 }}
                   className="p-6 rounded shadow-md bg-slate-50 dark:bg-slate-200"
                   whileHover={{ scale: 1.05 }}
                 >

@@ -1,6 +1,6 @@
 import Navigation from "./Navigation";
 import Image from "next/image";
-import rdtMast from "../public/rdt-mast.jpg";
+import rdtMast from "../public/rdt-masthead.jpg";
 import { motion } from "framer-motion";
 
 export default function Header() {

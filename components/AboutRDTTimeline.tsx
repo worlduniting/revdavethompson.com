@@ -20,7 +20,7 @@ export default function AboutRDTTimeline() {
       <h1 className="text-right text-4xl tracking-tight font-medium text-zinc-900 dark:text-white">
         Rev. &nbsp;Dave&rsquo;s Journey.
       </h1>
-      <h2 className="text-right mb-10 text-2xl tracking-tight font-extralight text-zinc-900 dark:text-white">
+      <h2 className="text-right mb-10 text-2xl tracking-widest font-extralight text-zinc-900 dark:text-white">
         Stops along the road
       </h2>
       <div className="container mx-auto w-full h-full">
@@ -31,9 +31,9 @@ export default function AboutRDTTimeline() {
           {/* Northwest University */}
           <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex md:items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex md:items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="rounded-full max-w-full h-auto align-middle border-none"
                 src={Nu}
                 alt="Northwest University Logo"
               />
@@ -42,7 +42,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="ml-10 md:ml-2 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="ml-10 md:ml-2 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="mb-3 text-black font-light text-2xl text-tight">
                 1995
@@ -64,7 +64,7 @@ export default function AboutRDTTimeline() {
           {/* Gordon Conwell Theological Seminary */}
           <div className="mb-20 flex md:justify-between md:flex-row-reverse md:items-center w-full right-timeline md:left-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex md:items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex md:items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                 src={Gordon}
@@ -75,7 +75,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="md:mr-2 ml-10 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="md:mr-2 ml-10 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="md:text-right mb-3 text-black font-light text-2xl text-tight">
                 1998
@@ -99,7 +99,7 @@ export default function AboutRDTTimeline() {
           {/* Admin Northwest University */}
           <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                 src={Nu}
@@ -110,7 +110,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="md:ml-2 ml-10 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="md:ml-2 ml-10 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="mb-3 text-black font-light text-2xl text-tight">
                 2000
@@ -134,7 +134,7 @@ export default function AboutRDTTimeline() {
           {/* Policorp Corporation */}
           <div className="mb-20 flex md:justify-between md:flex-row-reverse md:items-center w-full right-timeline md:left-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                 src={Poli}
@@ -145,7 +145,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="md:mr-2 ml-10 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="md:mr-2 ml-10 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="text-right mb-3 text-black font-light text-2xl text-tight">
                 2003
@@ -177,7 +177,7 @@ export default function AboutRDTTimeline() {
           {/* Starbucks Corporation */}
           <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                 src={Starbucks}
@@ -188,7 +188,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="md:ml-2 ml-10 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="md:ml-2 ml-10 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="mb-3 text-black font-light text-2xl text-tight">
                 2007
@@ -211,7 +211,7 @@ export default function AboutRDTTimeline() {
           {/* Disclaimer CD */}
           <div className="mb-20 flex md:justify-between md:flex-row-reverse md:items-center w-full right-timeline md:left-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                 src={Disc}
@@ -222,7 +222,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="md:mr-2 ml-10 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="md:mr-2 ml-10 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="text-right mb-3 text-black font-light text-2xl text-tight">
                 2009
@@ -252,7 +252,7 @@ export default function AboutRDTTimeline() {
           {/* Over Coffee Book */}
           <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex md:items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex md:items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                 src={OcBook}
@@ -263,7 +263,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="ml-10 md:ml-2 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="ml-10 md:ml-2 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="mb-3 text-black font-light text-2xl text-tight">
                 2010
@@ -301,7 +301,7 @@ export default function AboutRDTTimeline() {
           {/* YouTube CHBS */}
           <div className="mb-20 flex md:justify-between md:flex-row-reverse md:items-center w-full right-timeline md:left-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                 src={CHBS}
@@ -312,7 +312,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="md:mr-2 ml-10 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="md:mr-2 ml-10 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="text-right mb-3 text-black font-light text-2xl text-tight">
                 2019
@@ -350,7 +350,7 @@ export default function AboutRDTTimeline() {
           {/* Becoming Human Book */}
           <div className="flex md:justify-between md:items-center w-full md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-violet-500 rounded-full">
+            <div className="z-20 flex items-center order-1 bg-violet-500 shadow-xl w-28 h-28 border-solid border-8 border-zinc-300 rounded-full">
               <Image
                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                 src={Human}
@@ -361,7 +361,7 @@ export default function AboutRDTTimeline() {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="md:ml-2 ml-10 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-5/12 px-6 py-4"
+              className="md:ml-2 ml-10 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-2/5 px-6 py-4"
             >
               <h3 className="mb-3 text-black font-light text-2xl text-tight">
                 2023

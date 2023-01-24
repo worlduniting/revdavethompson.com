@@ -11,18 +11,18 @@ export default function Home() {
       <Header />
 
       {/* A HUMAN Ethic */}
-      <section className="pt-10 px-5 lg:px-10">
+      <section className="pt-10 px-5 pb-20 lg:px-10">
         <h1 className="pr-10 text-3xl tracking-tight font-bold">
           A <span className="text-violet-400 text-4xl ">HUMAN</span> Ethic.
         </h1>
         <div className="flex items-center flex-wrap">
-          <div className="px-16 pt-5 md:px-10 w-full md:w-1/2 max-w-screen-xl lg:pt-5 lg:pl-20">
+          <div className="px-16 pt-5 mt-10 md:px-10 w-full md:w-1/2 max-w-screen-xl lg:pt-5 lg:pl-20">
             <div className="max-w-screen-lg text-zinc-500 sm:text-lg lg:pl-[10%] md:text-sm dark:text-zinc-400">
               <motion.p
                 className="tracking-snug font-extralight text-xl"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5, delay: 3 }}
+                transition={{ duration: 2 }}
               >
                 IN our <span className="text-3xl lg:text-5xl">internet</span>{" "}
                 world,
@@ -31,29 +31,46 @@ export default function Home() {
                 className="text-right mb-2"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 2, delay: 4 }}
+                transition={{ duration: 2, delay: 2 }}
               >
                 <span className="text-xl font-extralight">
                   where there are{" "}
                   <span className="text-3xl lg:text-5xl">no nations</span>
                 </span>
               </motion.p>
-              <motion.p className="text-xl font-extralight">
-                <span className="text-3xl lg:text-5xl">whose culture</span> will
-                we follow
+              <motion.p
+                className="text-xl font-extralight"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2, delay: 4 }}
+              >
+                <span className="text-3xl lg:text-5xl text-right mb-2">
+                  whose culture
+                </span>{" "}
+                will we follow
               </motion.p>
-              <motion.p className="text-xl font-extralight text-right">
+              <motion.p
+                className="text-xl font-extralight text-right"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2, delay: 6 }}
+              >
                 and how do we <span className="text-3xl lg:text-5xl">find</span>
                 <span className="text-center text-3xl lg:text-5xl text-violet-500"></span>
               </motion.p>
-              <motion.p className="text-center tracking-widest mt-2 text-3xl lg:text-5xl text-violet-500">
+              <motion.p
+                className="text-center tracking-wide font-medium mt-2 text-3xl lg:text-4xl text-violet-500"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2, delay: 8 }}
+              >
                 common ground?
               </motion.p>
             </div>
           </div>
-          <div className="w-full px-4 p-20 md:w-1/2">
+          <div className="w-full inline-flex justify-center mt-10 md:w-1/2">
             <Image
-              className="w-full border-solid border-8 border-white shadow-lg"
+              className="object-center w-300 h-300 border-solid border-8 border-zinc-300 rounded-full"
               src={earth}
               alt="Earth with Big Question Mark on it"
             />
@@ -62,15 +79,23 @@ export default function Home() {
       </section>
 
       {/* RDT HUMAN Intro */}
-      <section className="pt-10 px-5 pb-16 lg:px-10">
+      <section className="pt-10 px-5 pb-16 lg:px-10 bg-zinc-100 dark:bg-zinc-800">
+        <h1 className="pr-10 text-3xl tracking-tight font-bold text-right">
+          A <span className="text-violet-400 text-4xl ">HUMAN</span> Servant.
+        </h1>
         <div className="flex items-center flex-wrap">
-          <div className="w-full px-10 pt-16 md:w-1/2">
+          <motion.div
+            className="w-full px-10 pt-16 md:w-1/2"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 100, scale: 1 }}
+            transition={{ duration: 1 }}
+          >
             <Image
-              className="bborder-solid border-8 border-white shadow-lg rounded-full w-full"
+              className="object-center w-300 h-300 border-solid border-8 border-zinc-300 rounded-full"
               src={rdtAvatar}
               alt="Earth with Big Question Mark on it"
             />
-          </div>
+          </motion.div>
           <div className="px-16 pt-5 md:px-10 w-full md:w-1/2 max-w-screen-xl lg:pt-5 lg:pl-20">
             <div className="max-w-screen-lg text-zinc-500 sm:text-lg lg:pl-[10%] md:text-sm dark:text-zinc-400">
               <motion.p
@@ -87,7 +112,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
               >
-                His long experience provided him the opportunity to develop his{" "}
+                His long experience has provided him the opportunity to develop his{" "}
                 <strong className="text-white">HUMAN</strong>&nbsp;Ethic, a set
                 of real-world, field-tested rules of conduct necessary for
                 finding the common ground that creates peace.

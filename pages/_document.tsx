@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import SpeedDialBtmRt from '../components/SpeedDialBtmRt';
+import Script from 'next/script';
 
 export default function Document() {
   return (
@@ -10,7 +11,7 @@ export default function Document() {
           href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css"
         />
       </Head>
-      <body className="dark:bg-zinc-700 dark:text-white text-slate-700">
+      <body className="dark:bg-zinc-700 dark:text-white text-zinc-700">
         <Main />
 
         <SpeedDialBtmRt />
