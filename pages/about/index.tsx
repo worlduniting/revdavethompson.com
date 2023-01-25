@@ -55,7 +55,6 @@ export default function Home() {
 
       <AboutRDT />
 
-      <Footer />
     </>
   );
 }

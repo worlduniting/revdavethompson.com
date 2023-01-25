@@ -28,7 +28,6 @@ export default function Home() {
       {/* Featurettes */}
       <Featurettes />
 
-      <Footer />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

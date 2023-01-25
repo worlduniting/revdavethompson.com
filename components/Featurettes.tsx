@@ -7,7 +7,7 @@ import poliSmall from "../public/poli-sm.jpg";
 import allSaints from "../public/all-saints.jpg";
 import help from "../public/svgs/HelpSVG.svg";
 import speaking from "../public/svgs/speaking.svg";
-import LearnMore from "./modals/LearnMore";
+import Speaking from "./modals/Speaking";
 import Script from "next/script";
 import Lccc from "./modals/Lccc";
 import { motion } from "framer-motion";
@@ -33,7 +33,7 @@ export default function Featurettes() {
           </motion.div>
           <div className="flex flex-col flex-wrap lg:py-6 mb-10 md:w-1/2 md:pl-12 md:text-left text-center">
             <div className="flex flex-col mb-10 md:items-start items-center">
-              <div className="w-20 h-20 border-solid border-4 border-zinc-400 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-5">
+              <div className="w-20 h-20 border-solid border-4 border-zinc-300 inline-flex items-center justify-center rounded-full bg-white text-purple-500 mb-5">
                 <Image
                   alt="Speaking Icon"
                   className="object-center rounded-full w-16 h-16"
@@ -41,7 +41,7 @@ export default function Featurettes() {
                 />
               </div>
               <div className="flex-grow items-center">
-                <h2 className="text-3xl pb-3 border-solid md:border-b-2 border-zinc-500 title-font font-medium mb-3">
+                <h2 className="text-3xl pb-3 border-solid md:border-b-2 border-zinc-300 title-font font-medium mb-3">
                   Speaking
                   <br />& Engagements
                 </h2>
@@ -53,7 +53,7 @@ export default function Featurettes() {
                   welcoming the opportunity to speak at your college, business,
                   church, organization, or small group.
                 </p>
-                <LearnMore />
+                <Speaking />
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Featurettes() {
           </motion.div>
           <div className="flex flex-col flex-wrap mt-14 lg:py-6 mb-10 md:w-1/2 md:pl-12 md:text-left text-center">
             <div className="flex flex-col mb-10 md:items-start items-center">
-              <div className="w-20 h-20 border-solid border-4 border-zinc-400 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-5">
+              <div className="w-20 h-20 border-solid border-4 border-zinc-300 inline-flex items-center justify-center rounded-full bg-white text-purple-500 mb-5">
                 <Image
                   alt="Leadership Help Icon"
                   className="object-center rounded-full w-16 h-16"
@@ -81,7 +81,7 @@ export default function Featurettes() {
                 />
               </div>
               <div className="flex-grow">
-                <h2 className="text-3xl pb-3 border-solid border-b-2 border-zinc-500 title-font font-medium mb-3">
+                <h2 className="text-3xl pb-3 border-solid border-b-2 border-zinc-300 title-font font-medium mb-3">
                   Confidential
                   <br />
                   Leadership Care
@@ -110,8 +110,6 @@ export default function Featurettes() {
             </div>
           </div>
 
-          
-
           {/* Youtube Channel Feature */}
           <motion.div
             className="mb-5 w-full inline-flex items-center justify-center md:w-1/2"
@@ -127,7 +125,7 @@ export default function Featurettes() {
           </motion.div>
           <div className="flex flex-col flex-wrap lg:py-6 -mb-10 md:w-1/2 md:pl-12 md:text-left text-center">
             <div className="flex flex-col mb-10 md:items-start items-center">
-              <div className="w-20 h-20 border-solid border-4 border-zinc-400 inline-flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-5">
+              <div className="w-20 h-20 border-solid border-4 border-zinc-300 inline-flex items-center justify-center rounded-full bg-white text-purple-500 mb-5">
                 {/* YouTube SVG Graphic */}
                 <svg
                   aria-hidden="true"
@@ -152,7 +150,7 @@ export default function Featurettes() {
                 </svg>
               </div>
               <div className="flex-grow">
-                <h2 className="text-3xl pb-3 border-solid border-b-2 border-zinc-500 title-font font-medium mb-3">
+                <h2 className="text-3xl pb-3 border-solid border-b-2 border-zinc-300 title-font font-medium mb-3">
                   Rev. Dave&rsquo;s<br /> YouTube Channel
                 </h2>
                 <p className="leading-relaxed text-base mb-5">

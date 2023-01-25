@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import SpeedDialBtmRt from '../components/SpeedDialBtmRt';
-import Script from 'next/script';
+import Footer from '../components/Footer';
 
 export default function Document() {
   return (
@@ -16,6 +16,7 @@ export default function Document() {
 
         <SpeedDialBtmRt />
         <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js" async></script>
+        <Footer />
         <NextScript />
       </body>
     </Html>

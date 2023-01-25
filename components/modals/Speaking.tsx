@@ -116,28 +116,28 @@ export default function LearnMore() {
                   <div className="py-5 overflow-y-auto h-[200px] font-light border-b border-zinc-200 dark:border-zinc-700">
                     <p className="font-light text-xl mx-16 tracking-widest mb-4 text-zinc-500 dark:text-zinc-400">
                       The single most{" "}
-                      <span className="text-2xl font-extralight">
+                      <span className="text-3xl font-extralight">
                         important
                       </span>{" "}
                       asset of any business is{" "}
-                      <span className="text-2xl font-extralight  ">people</span>
+                      <span className="text-3xl font-extralight  ">people</span>
                       .
                     </p>
                     <p className="mb-2 text-zinc-500 dark:text-zinc-400">
-                      In our culture that has become more divided than ever, the
-                      ability to create and maintain a peaceful work environment
-                      is more critical than ever. Rev. Dave's training and
-                      resources can help your people set aside our many human
-                      differences, and insteadm to be galvanized around your
-                      their shared common ground, and your vision.
+                      Our culture has become more divided than ever. The ability
+                      to create and maintain a peaceful work environment is
+                      critical to success. Rev. Dave can provide resources and
+                      training that can help your people set aside our many
+                      human differences, and instead, to be galvanized around
+                      their shared common ground---and your vision.
                     </p>
                     <p className="mb-2 text-zinc-500 dark:text-zinc-400">
                       Rev. Dave brings an impressive resume of business know-how
-                      to his engagements. Running his own political consulting
-                      firm for eight years, and working with and in Fortune-500
-                      corporations, has given him an invaluable insight into the
-                      practical value of a peaceful and united corporate culture
-                      and environment.
+                      to his engagements. Having run his own political
+                      consulting firm for eight years, and worked with and in
+                      Fortune-500 corporations, he has gained an invaluable
+                      insight into the practical value of a peaceful and united
+                      corporate culture and environment.
                     </p>
                     <p className="text-zinc-500 font-medium dark:text-zinc-400">
                       Check out this guide and learn how to{" "}
@@ -189,15 +189,8 @@ export default function LearnMore() {
                       Rev. Dave would love to speak to your small group.
                     </p>
                     <p className="text-zinc-500 dark:text-zinc-400">
-                      Check out the{" "}
-                      <a
-                        href="https://flowbite.com/figma/"
-                        className="text-blue-600 dark:text-blue-500 hover:underline"
-                      >
-                        Figma design system
-                      </a>{" "}
-                      based on the utility classes from Tailwind CSS and
-                      components from Flowbite.
+                      Please click on the "Contact" button below to arrange to
+                      have him speak at your group.
                     </p>
                   </div>
                 </div>
@@ -235,18 +228,24 @@ export default function LearnMore() {
                   aria-labelledby="accordion-flush-heading-3"
                 >
                   <div className="py-5 font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
-                      The main difference is that the core components from
-                      Flowbite are open source under the MIT license, whereas
-                      Tailwind UI is a paid product. Another difference is that
-                      Flowbite relies on smaller and standalone components,
-                      whereas Tailwind UI offers sections of pages.
+                    <p className="font-light text-xl mx-16 tracking-widest mb-4 text-zinc-500 dark:text-zinc-400">
+                      Division in{" "}
+                      <span className="text-3xl font-extralight">
+                        your congregation
+                      </span>{" "}
+                      can be difficult to navigate, but{" "}
+                      <span className="text-3xl font-extralight">
+                        Rev. Dave
+                      </span>{" "}
+                      can help you.
                     </p>
                     <p className="mb-2 text-zinc-500 dark:text-zinc-400">
-                      However, we actually recommend using both Flowbite,
-                      Flowbite Pro, and even Tailwind UI as there is no
-                      technical reason stopping you from using the best of two
-                      worlds.
+                      For over twenty years Rev. Dave has worked one-on-one with
+                      ministers from all over the world and from many different
+                      persuasions. His practical experience in leading churches
+                      through divisive issues around faith and people, have
+                      given him an indespensible model for bring congregations
+                      away from division and back to their shared common ground.
                     </p>
                   </div>
                 </div>

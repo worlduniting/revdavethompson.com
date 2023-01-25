@@ -103,7 +103,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
               >
-                <span className="text-white">Rev. Dave</span> has spent over
+                <span className="text-2xl font-medium">Rev. Dave</span> has spent over
                 twenty years building common ground between our most divided of
                 social groups and issues.
               </motion.p>
@@ -113,7 +113,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, x: 0 }}
               >
                 His long experience has provided him the opportunity to develop his{" "}
-                <strong className="text-white">HUMAN</strong>&nbsp;Ethic, a set
+                <strong className="text-2xl font-medium">HUMAN</strong> {" "} Ethic&trade;, a set
                 of real-world, field-tested rules of conduct necessary for
                 finding the common ground that creates peace.
               </motion.p>
