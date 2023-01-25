@@ -24,9 +24,9 @@ export default function AboutRDTTimeline() {
         Stops along the road
       </h2>
       <div className="container mx-auto w-full h-full">
-        <div className="relative wrap overflow-hidden p-10 h-full">
+        <div className="relative wrap overflow-hidden h-full">
           {/* Timeline Line */}
-          <div className="left-24 border-2-2 absolute border-opacity-20 md:left-[50%] border-zinc-700 dark:border-zinc-500 h-full border"></div>
+          <div className="left-14 border-2-2 absolute border-opacity-20 md:left-[50%] border-zinc-700 dark:border-zinc-500 h-full border"></div>
 
           {/* Northwest University */}
           <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">

@@ -7,16 +7,16 @@ import { motion } from "framer-motion";
 export default function HUMANTimeline() {
   return (
     <section className="mx-auto py-20 px-6 p-10">
-      <h1 className="text-4xl tracking-tight font-medium text-zinc-900 dark:text-white">
+      <h1 className="text-4xl ml-5 tracking-tight font-medium text-zinc-900 dark:text-white">
         Five simple rules.
       </h1>
-      <h2 className="mb-10 text-2xl tracking-tight font-extralight text-zinc-900 dark:text-white">
+      <h2 className="mb-10 ml-5 text-2xl tracking-tight font-extralight text-zinc-900 dark:text-white">
         For finding common ground
       </h2>
       <div className="container mx-auto w-full h-full">
-        <div className="relative wrap overflow-hidden p-10 h-full">
+        <div className="relative wrap overflow-hidden h-full">
           {/* Timeline Line */}
-          <div className="left-24 border-2-2 absolute border-opacity-20 md:left-[50%] border-zinc-700 dark:border-zinc-500 h-full border"></div>
+          <div className="left-14 border-2-2 absolute border-opacity-20 md:left-[50%] border-zinc-700 dark:border-zinc-500 h-full border"></div>
 
           {/* Honest */}
           <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">

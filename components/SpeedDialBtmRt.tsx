@@ -16,7 +16,7 @@ export default function SpeedDialBtmRt() {
           type="button"
           data-tooltip-target="tooltip-youtube"
           data-tooltip-placement="left"
-          className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-violet-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-violet-400 dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+          className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-violet-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-violet-400 dark:text-violet-900 hover:bg-gray-50 dark:bg-zinc-300 dark:hover:bg-zinc-200 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
         >
           {/* YouTube SVG Graphic */}
           <svg
@@ -63,7 +63,7 @@ export default function SpeedDialBtmRt() {
             type="button"
             data-tooltip-target="tooltip-instagram"
             data-tooltip-placement="left"
-            className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-violet-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-violet-400 dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+            className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-violet-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-violet-400 dark:text-violet-900 hover:bg-gray-50 dark:bg-zinc-300 dark:hover:bg-zinc-200 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
           >
             {/* Instagram SVG Graphic */}
             <svg
@@ -103,9 +103,8 @@ export default function SpeedDialBtmRt() {
             type="button"
             data-tooltip-target="tooltip-facebook"
             data-tooltip-placement="left"
-            className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-violet-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-violet-400 shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+            className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-violet-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-violet-400 shadow-sm dark:text-violet-900 hover:bg-gray-50 dark:bg-zinc-300 dark:hover:bg-zinc-200 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
           >
-
             {/* Facebook SVG Graphic */}
             <svg
               fill="currentColor"

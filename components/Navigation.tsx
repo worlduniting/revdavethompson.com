@@ -6,115 +6,82 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 const myFont = localFont({ src: "../fonts/Zayne.ttf", preload: true });
 
-// https://tailwindui.com/components/application-ui/application-shells/stacked
-
 export default function Navigation() {
   return (
-    <nav className="sticky top-0 z-50 opacity-90 shadow-md bg-white dark:bg-zinc-700">
-      <div className="container flex items-center justify-between px-6 mx-auto">
-        <Link className="text-2xl lg:text-4xl my-7" href="/">
-          <AnimatedText
-            text="Rev. Dave Thompson"
-            textStyles={myFont.className}
-          />
-        </Link>
+    <>
+      <nav className="bg-white border-zinc-200 px-2 sm:px-4 py-4 rounded dark:bg-zinc-900 shadow sticky top-0 z-50">
+        <div className="container flex flex-wrap items-center justify-between mx-auto">
+          <Link className="flex items-center text-2xl lg:text-4xl" href="/">
+            <AnimatedText
+              text="Rev. Dave Thompson"
+              textStyles={myFont.className}
+            />
+          </Link>
 
-        {/* Mobile Menu */}
-        <button
-          id="dropdownDefaultButton"
-          data-dropdown-toggle="dropdown"
-          className="md:hidden hover:bg-zinc-200 dark:hover:bg-zinc-500 focus:outline-none font-medium rounded-lg text-sm px-2.5 py-2.5 text-center inline-flex items-center"
-          type="button"
-        >
-          <svg
-            className="fill-current h-5 w-5"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+          <ThemeSwitcher />
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            className="inline-flex items-center p-2 ml-3 text-sm text-zinc-500 rounded-lg md:hidden hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:focus:ring-zinc-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
           >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
+            <span className="sr-only">Open main menu</span>
+            <svg
+              className="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
 
-        <div
-          id="dropdown"
-          className="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700"
-        >
-          <ul
-            className="py-1 text-sm text-gray-700 dark:text-gray-200"
-            aria-labelledby="dropdownDefaultButton"
-          >
-            <li>
-              <Link
-                href="/a-human-ethic/"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
-                A{" "}
-                <span className="text-violet-600 dark:text-violet-400 font-medium">
-                  HUMAN
-                </span>{" "}
-                Ethic
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about/"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
-                About Rev. Dave
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact/"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+          {/* Menu */}
+          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+            <motion.ul
+              initial={{ y: -30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="flex flex-col p-4 mt-4 border border-zinc-100 opacity-80 rounded-lg bg-zinc-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-zinc-800 md:dark:bg-zinc-900 dark:border-zinc-700"
+            >
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Link
+                  className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="/a-human-ethic/"
+                >
+                  A{" "}
+                  <span className="text-violet-600 dark:text-violet-400 font-medium">
+                    HUMAN
+                  </span>{" "}
+                  Ethic
+                </Link>
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Link
+                  className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="/about/"
+                >
+                  About Rev. Dave
+                </Link>
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Link
+                  className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="/contact/"
+                >
+                  Contact
+                </Link>
+              </motion.li>
+            </motion.ul>
+          </div>
         </div>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:block">
-          <motion.ul
-            initial={{ y: -30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="inline-flex"
-          >
-            <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-              <Link
-                className="px-4 dark:hover:text-slate-300"
-                href="/a-human-ethic/"
-              >
-                A{" "}
-                <span className="text-violet-600 dark:text-violet-400 font-medium">
-                  HUMAN
-                </span>{" "}
-                Ethic
-              </Link>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-              <Link
-                className="px-4 dark:hover:text-slate-300"
-                href="/about/"
-              >
-                About Rev. Dave
-              </Link>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-              <Link
-                className="px-4 dark:hover:text-slate-300"
-                href="/contact/"
-              >
-                Contact
-              </Link>
-            </motion.li>
-          </motion.ul>
-        </div>
-        <ThemeSwitcher />
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }

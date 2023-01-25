@@ -1,14 +1,12 @@
 // Root Index/Home Page
 
 import Testimonials from "../components/Testimonials";
-import { motion } from "framer-motion";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { Inter } from "@next/font/google";
 import Script from "next/script";
 import Featurettes from "../components/Featurettes";
 import HtmlHead from "../components/HtmlHead";
 import FrontCTA from "../components/FrontCTA";
+import Header from "../components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +14,6 @@ export default function Home() {
   return (
     <>
       <HtmlHead />
-
       <Header />
 
       {/* Call To Action */}

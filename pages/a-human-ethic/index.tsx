@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* A HUMAN Ethic */}
       <section className="pt-10 px-5 pb-20 lg:px-10">
-        <h1 className="pr-10 text-3xl tracking-tight font-bold">
+        <h1 className="pr-10 ml-5 text-3xl tracking-tight font-bold">
           A <span className="text-violet-400 text-4xl ">HUMAN</span> Ethic.
         </h1>
         <div className="flex items-center flex-wrap">
@@ -24,7 +24,10 @@ export default function Home() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2 }}
               >
-                IN our <span className="text-3xl lg:text-5xl">internet</span>{" "}
+                IN our{" "}
+                <span className="text-3xl lg:text-5xl dark:text-zinc-200">
+                  internet
+                </span>{" "}
                 world,
               </motion.p>
               <motion.p
@@ -35,7 +38,9 @@ export default function Home() {
               >
                 <span className="text-xl font-extralight">
                   where there are{" "}
-                  <span className="text-3xl lg:text-5xl">no nations</span>
+                  <span className="text-3xl lg:text-5xl dark:text-zinc-200">
+                    no nations
+                  </span>
                 </span>
               </motion.p>
               <motion.p
@@ -44,10 +49,13 @@ export default function Home() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2, delay: 4 }}
               >
-                <span className="text-3xl lg:text-5xl text-right mb-2">
+                <span className="text-3xl lg:text-5xl text-right mb-2 dark:text-zinc-200">
                   whose culture
                 </span>{" "}
-                will we follow
+                will we {" "}
+                <span className="text-3xl lg:text-5xl text-right mb-2 dark:text-zinc-200">
+                  follow
+                </span>
               </motion.p>
               <motion.p
                 className="text-xl font-extralight text-right"
@@ -55,7 +63,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2, delay: 6 }}
               >
-                and how do we <span className="text-3xl lg:text-5xl">find</span>
+                and how do we <span className="text-3xl lg:text-5xl dark:text-zinc-200">find</span>
                 <span className="text-center text-3xl lg:text-5xl text-violet-500"></span>
               </motion.p>
               <motion.p
@@ -103,19 +111,19 @@ export default function Home() {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
               >
-                <span className="text-2xl font-medium">Rev. Dave</span> has spent over
-                twenty years building common ground between our most divided of
-                social groups and issues.
+                <span className="text-2xl font-medium">Rev. Dave</span> has
+                spent over twenty years building common ground between our most
+                divided of social groups and issues.
               </motion.p>
               <motion.p
                 className="tracking-snug font-extralight text-xl"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
               >
-                His long experience has provided him the opportunity to develop his{" "}
-                <strong className="text-2xl font-medium">HUMAN</strong> {" "} Ethic&trade;, a set
-                of real-world, field-tested rules of conduct necessary for
-                finding the common ground that creates peace.
+                His long experience has provided him the opportunity to develop
+                his <strong className="text-2xl font-medium">HUMAN</strong>{" "}
+                Ethic&trade;, a set of real-world, field-tested rules of conduct
+                necessary for finding the common ground that creates peace.
               </motion.p>
             </div>
           </div>
