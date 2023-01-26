@@ -7,7 +7,6 @@ import Header from "../../components/Header";
 import Image from "next/image";
 import rdtAvatar from "../../public/svgs/rdt-avatar.svg";
 import { motion } from "framer-motion";
-import Footer from "../../components/Footer";
 
 export default function Home() {
   return (

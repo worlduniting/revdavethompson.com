@@ -3,8 +3,6 @@
 */
 import ContactForm from "../../components/ContactForm";
 import Header from "../../components/Header"
-import Speaking from "../../public/all-saints_sm.png"
-import Leadership from "../../public/poli-sm.png"
 import Image from "next/image";
 import rdtAvatar from "../../public/svgs/rdt-avatar.svg"
 import { motion } from "framer-motion";
