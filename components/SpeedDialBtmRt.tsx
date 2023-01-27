@@ -1,8 +1,6 @@
 // SpeedDialBtmRt Component
 //  with YouTube, Instagram, and Facebook
 import Link from "next/link";
-import Image from "next/image";
-import Facebook from "../public/svgs/facebook.svg";
 
 export default function SpeedDialBtmRt() {
   return (

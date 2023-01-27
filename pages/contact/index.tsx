@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex items-center flex-wrap">
             <div className="w-full px-10 pt-16 md:w-1/2">
               <Image
-                className="bborder-solid border-8 border-white shadow-lg rounded-full w-full"
+                className="border-solid border-8 border-white shadow-lg rounded-full w-300 h-300"
                 src={rdtAvatar}
                 alt="Earth with Big Question Mark on it"
               />

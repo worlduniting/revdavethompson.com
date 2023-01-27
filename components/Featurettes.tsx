@@ -8,14 +8,12 @@ import allSaints from "../public/all-saints.jpg";
 import help from "../public/svgs/HelpSVG.svg";
 import speaking from "../public/svgs/speaking.svg";
 import Speaking from "./modals/Speaking";
-import Script from "next/script";
 import Lccc from "./modals/Lccc";
 import { motion } from "framer-motion";
 
 export default function Featurettes() {
   return (
     <>
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></Script>
       <section className="body-front">
         <div className="container items-center py-24 mx-auto flex flex-wrap">
           {/* Speaking & Engagements Feature */}

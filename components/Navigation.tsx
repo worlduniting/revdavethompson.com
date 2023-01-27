@@ -3,82 +3,115 @@ import localFont from "@next/font/local";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ThemeSwitcher from "./ThemeSwitcher";
+import Head from "next/head";
+import { useState } from "react";
+
+{
+  /* https://larainfo.com/blogs/create-responsive-navbar-menu-in-next-js-with-tailwind-css */
+}
 
 const myFont = localFont({ src: "../fonts/Zayne.ttf", preload: true });
 
 export default function Navigation() {
+
+  const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <nav className="bg-white border-zinc-200 px-2 sm:px-4 py-4 rounded dark:bg-zinc-900 shadow sticky top-0 z-50">
-        <div className="container flex flex-wrap items-center justify-between mx-auto">
-          <Link className="flex items-center text-2xl lg:text-4xl" href="/">
-            <AnimatedText
-              text="Rev. Dave Thompson"
-              textStyles={myFont.className}
-            />
-          </Link>
-
-          <ThemeSwitcher />
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-zinc-500 rounded-lg md:hidden hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-200 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:focus:ring-zinc-600"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+      <nav className="w-full border-zinc-200 px-2 sm:px-4 py-4 rounded dark:bg-zinc-700 shadow sticky top-0 z-50">
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+          <div>
+            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+              <Link className="flex items-center text-2xl lg:text-4xl" href="/">
+                <AnimatedText
+                  text="Rev. Dave Thompson"
+                  textStyles={myFont.className}
+                />
+              </Link>
+              
+              <div className="md:hidden">
+                <button
+                  className="p-2 text-gray-700 rounded-md outline-none"
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  {navbar ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                navbar ? "block" : "hidden"
+              }`}
             >
-              <path
-                fillRule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </button>
-
-          {/* Menu */}
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <motion.ul
-              initial={{ y: -30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
-              className="flex flex-col p-4 mt-4 border border-zinc-100 opacity-80 rounded-lg bg-zinc-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-zinc-800 md:dark:bg-zinc-900 dark:border-zinc-700"
-            >
-              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link
-                  className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  href="/a-human-ethic/"
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                <motion.li
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 >
-                  A{" "}
-                  <span className="text-violet-600 dark:text-violet-400 font-medium">
-                    HUMAN
-                  </span>{" "}
-                  Ethic
-                </Link>
-              </motion.li>
-              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link
-                  className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  href="/about/"
+                  <Link
+                    className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    href="/a-human-ethic/"
+                  >
+                    A{" "}
+                    <span className="text-violet-600 dark:text-violet-400 font-medium">
+                      HUMAN
+                    </span>{" "}
+                    Ethic
+                  </Link>
+                </motion.li>
+                <motion.li
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 >
-                  About Rev. Dave
-                </Link>
-              </motion.li>
-              <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Link
-                  className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  href="/contact/"
+                  <Link
+                    className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    href="/about/"
+                  >
+                    About Rev. Dave
+                  </Link>
+                </motion.li>
+                <motion.li
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 >
-                  Contact
-                </Link>
-              </motion.li>
-            </motion.ul>
+                  <Link
+                    className="block py-2 pl-3 pr-4 text-zinc-700 rounded hover:bg-zinc-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    href="/contact/"
+                  >
+                    Contact
+                  </Link>
+                </motion.li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

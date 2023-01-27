@@ -52,7 +52,7 @@ export default function Home() {
                 <span className="text-3xl lg:text-5xl text-right mb-2 dark:text-zinc-200">
                   whose culture
                 </span>{" "}
-                will we {" "}
+                will we{" "}
                 <span className="text-3xl lg:text-5xl text-right mb-2 dark:text-zinc-200">
                   follow
                 </span>
@@ -63,7 +63,10 @@ export default function Home() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2, delay: 6 }}
               >
-                and how do we <span className="text-3xl lg:text-5xl dark:text-zinc-200">find</span>
+                and how do we{" "}
+                <span className="text-3xl lg:text-5xl dark:text-zinc-200">
+                  find
+                </span>
                 <span className="text-center text-3xl lg:text-5xl text-violet-500"></span>
               </motion.p>
               <motion.p
