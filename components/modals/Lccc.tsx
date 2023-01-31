@@ -68,11 +68,9 @@ export default function Lccc() {
             <div className="p-6 space-y-6">
               <p className="text-base leading-relaxed">
                 Leadership can often be a lonely place. It can be tough to find
-                help with delicate matters. Sometimes a private ear is all that
-                is needed&mdash;a person who can listen without judgement or
-                discrimination. These delicate issues, whether organizational or
+                help with delicate matters. These difficult issues, whether organizational or
                 personal, can often carry drastic consequences, just by talking
-                about it. Rev. Dave, however, has served as a confidential place
+                about them. Rev. Dave, however, has served as a confidential resource
                 for leaders in these circumstances, providing a safe space to
                 talk openly and comfortably about subjects that can have
                 serious, embarrassing, or potentially incriminating
@@ -80,19 +78,8 @@ export default function Lccc() {
               </p>
               <p className="text-base leading-relaxed">
                 As a licensed and ordained minister in the State of California,
-                your conversations with Rev. Dave can (and always will) remain
-                private, under the protection of ministerial privelege.
-              </p>
-              <p className="text-base leading-relaxed">
-                For over twenty years, Rev. Dave has served as a confidential
-                ear for leaders, ministers, and politicians. He began this work
-                by reaching out to ministers who needed to talk about LGBT
-                situations in their congregations or personal lives. Over time
-                he found himself dealing with a myriad of delicate and difficult
-                situations and has been honored to serve hundreds of different
-                leadership, from CEO's and Boards of Fortune 500's and
-                Inter/National politicians, to small business and local
-                leadership.
+                your conversations with Rev. Dave can remain
+                private, under the protection of Clergy Privelege.
               </p>
               <p className="text-base leading-relaxed">
                 If you need help with a difficult or delicate issue you (or your
