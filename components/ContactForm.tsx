@@ -17,8 +17,8 @@ export default function ContactForm() {
                 Contact Rev. Dave
               </h3>
               <p className="mt-3 text-sm">
-                All communications will be treated as confidential. We will not
-                share your information with anyone.
+                All communications will be handled privately with the utmost of care. We will never
+                share your information with anyone without your expressed permission.
               </p>
             </div>
           </div>
@@ -51,11 +51,22 @@ export default function ContactForm() {
                           htmlFor="insightly_private__c"
                           className="font-medium"
                         >
-                          Private (seen only by Rev. Dave)
+                          Confidential (seen only by Rev. Dave)
                         </label>
                         <p className="text-sm">
-                          All other requests will be securely sent to relevant
-                          staff.
+                          This communication will be treated as a penitential
+                          communication within the context of "Clergy Penitent
+                          Privelege",{" "}
+                          <Link
+                            className="hover:text-gray-300 text-violet-400 dark:text-violet-300"
+                            href="https://www.easylawlookup.com/California-Law/Evidence-Code/pg-25/_easylookup.blp?data=EVIDENCE&sidfw=&site=EASY&location=78232&spon=&stype=P&sterm=+&smode=AND&sexact=ON&pgno=25&par=683&dlevel=2#par_683"
+                            rel="noopener noreferrer"
+                            title="California Clergy Penitent Privelege"
+                            target="_blank"
+                          >
+                            as per California Law
+                          </Link>.{" "}
+                          Rev. Dave will contact you as soon as he is able.
                         </p>
                       </div>
                     </div>
@@ -142,7 +153,7 @@ export default function ContactForm() {
                         htmlFor="Description"
                         className="block text-sm font-medium"
                       >
-                        How can we help?
+                        How can Rev. Dave help?
                       </label>
                       <textarea
                         id="insightly_Description"

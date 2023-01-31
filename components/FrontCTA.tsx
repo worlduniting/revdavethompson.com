@@ -3,6 +3,8 @@
 */
 import { motion } from "framer-motion";
 import TeamSVG from "../components/teamSVG";
+import Image from "next/image";
+import Extreme from "../public/svgs/extreme-cultures.svg"
 
 
 export default function FrontCTA() {

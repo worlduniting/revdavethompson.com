@@ -5,7 +5,6 @@ const fs = require("fs")
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    jquery: fs.readFileSync("./node_modules/flowbite/dist/flowbite.min.js").toString(),
   },
 }
 

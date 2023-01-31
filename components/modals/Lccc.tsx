@@ -66,189 +66,40 @@ export default function Lccc() {
             </div>
             {/* Modal body */}
             <div className="p-6 space-y-6">
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                With less than a month to go before the European Union enacts
-                new consumer privacy laws for its citizens, companies around the
-                world are updating their terms of service agreements to comply.
+              <p className="text-base leading-relaxed">
+                Leadership can often be a lonely place. It can be tough to find
+                help with delicate matters. Sometimes a private ear is all that
+                is needed&mdash;a person who can listen without judgement or
+                discrimination. These delicate issues, whether organizational or
+                personal, can often carry drastic consequences, just by talking
+                about it. Rev. Dave, however, has served as a confidential place
+                for leaders in these circumstances, providing a safe space to
+                talk openly and comfortably about subjects that can have
+                serious, embarrassing, or potentially incriminating
+                consequences.
               </p>
-
-              {/* Accordian Component */}
-              <div
-                id="accordion-flush"
-                data-accordion="collapse"
-                data-active-classes="bg-white dark:bg-zinc-600 text-zinc-900 dark:text-white"
-                data-inactive-classes="text-zinc-500 dark:text-zinc-400"
-              >
-                {/* Corporate Presentations */}
-                <h2 id="accordion-flush-heading-1 text-2xl">
-                  <button
-                    type="button"
-                    className="flex items-center justify-between w-full py-5 font-medium text-left text-zinc-500 border-b border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
-                    data-accordion-target="#accordion-flush-body-1"
-                    aria-expanded="true"
-                    aria-controls="accordion-flush-body-1"
-                  >
-                    <span className="text-2xl font-light">
-                      Corporate Presentations & Key Note Speaking
-                    </span>
-                    <svg
-                      data-accordion-icon
-                      className="w-6 h-6 rotate-180 shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </h2>
-                <div
-                  id="accordion-flush-body-1"
-                  className="hidden"
-                  aria-labelledby="accordion-flush-heading-1"
-                >
-                  <div className="py-5 overflow-y-auto h-[200px] font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="font-light text-xl mx-16 tracking-widest mb-4 text-zinc-500 dark:text-zinc-400">
-                      The single most{" "}
-                      <span className="text-2xl font-extralight">
-                        important
-                      </span>{" "}
-                      asset of any business is{" "}
-                      <span className="text-2xl font-extralight  ">people</span>
-                      .
-                    </p>
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
-                      In our culture that has become more divided than ever, the
-                      ability to create and maintain a peaceful work environment
-                      is more critical than ever. Rev. Dave's training and
-                      resources can help your people set aside our many human
-                      differences, and insteadm to be galvanized around your
-                      their shared common ground, and your vision.
-                    </p>
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
-                      Rev. Dave brings an impressive resume of business know-how
-                      to his engagements. Running his own political consulting
-                      firm for eight years, and working with and in Fortune-500
-                      corporations, has given him an invaluable insight into the
-                      practical value of a peaceful and united corporate culture
-                      and environment.
-                    </p>
-                    <p className="text-zinc-500 font-medium dark:text-zinc-400">
-                      Check out this guide and learn how to{" "}
-                      <a
-                        href="/docs/getting-started/introduction/"
-                        className="text-blue-600 dark:text-blue-500 hover:underline"
-                      >
-                        get started
-                      </a>{" "}
-                      building a culture of peace and common ground.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Small Groups */}
-                <h2 id="accordion-flush-heading-2">
-                  <button
-                    type="button"
-                    className="flex items-center justify-between w-full py-5 font-medium text-left text-zinc-500 border-b border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
-                    data-accordion-target="#accordion-flush-body-2"
-                    aria-expanded="false"
-                    aria-controls="accordion-flush-body-2"
-                  >
-                    <span className="text-2xl font-light">
-                      Small Group Engagements
-                    </span>
-                    <svg
-                      data-accordion-icon
-                      className="w-6 h-6 shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </h2>
-                <div
-                  id="accordion-flush-body-2"
-                  className="hidden"
-                  aria-labelledby="accordion-flush-heading-2"
-                >
-                  <div className="py-5 font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
-                      Rev. Dave would love to speak to your small group.
-                    </p>
-                    <p className="text-zinc-500 dark:text-zinc-400">
-                      Check out the{" "}
-                      <a
-                        href="https://flowbite.com/figma/"
-                        className="text-blue-600 dark:text-blue-500 hover:underline"
-                      >
-                        Figma design system
-                      </a>{" "}
-                      based on the utility classes from Tailwind CSS and
-                      components from Flowbite.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Churches & Non-Profits */}
-                <h2 id="accordion-flush-heading-3">
-                  <button
-                    type="button"
-                    className="flex items-center justify-between w-full py-5 font-medium text-left text-zinc-500 border-b border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
-                    data-accordion-target="#accordion-flush-body-3"
-                    aria-expanded="false"
-                    aria-controls="accordion-flush-body-3"
-                  >
-                    <span className="text-2xl font-light">
-                      Churches & Non-Profits
-                    </span>
-                    <svg
-                      data-accordion-icon
-                      className="w-6 h-6 shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </h2>
-                <div
-                  id="accordion-flush-body-3"
-                  className="hidden"
-                  aria-labelledby="accordion-flush-heading-3"
-                >
-                  <div className="py-5 font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
-                      The main difference is that the core components from
-                      Flowbite are open source under the MIT license, whereas
-                      Tailwind UI is a paid product. Another difference is that
-                      Flowbite relies on smaller and standalone components,
-                      whereas Tailwind UI offers sections of pages.
-                    </p>
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
-                      However, we actually recommend using both Flowbite,
-                      Flowbite Pro, and even Tailwind UI as there is no
-                      technical reason stopping you from using the best of two
-                      worlds.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-base leading-relaxed">
+                As a licensed and ordained minister in the State of California,
+                your conversations with Rev. Dave can (and always will) remain
+                private, under the protection of ministerial privelege.
+              </p>
+              <p className="text-base leading-relaxed">
+                For over twenty years, Rev. Dave has served as a confidential
+                ear for leaders, ministers, and politicians. He began this work
+                by reaching out to ministers who needed to talk about LGBT
+                situations in their congregations or personal lives. Over time
+                he found himself dealing with a myriad of delicate and difficult
+                situations and has been honored to serve hundreds of different
+                leadership, from CEO's and Boards of Fortune 500's and
+                Inter/National politicians, to small business and local
+                leadership.
+              </p>
+              <p className="text-base leading-relaxed">
+                If you need help with a difficult or delicate issue you (or your
+                organization) are wrestling with, please contact Rev. Dave on
+                his Contact Page. Be sure to select "Private" so your message
+                will only be seen by Rev. Dave himself.
+              </p>
             </div>
             {/* Modal footer */}
             <div className="flex items-center justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">

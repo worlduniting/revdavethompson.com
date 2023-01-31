@@ -27,16 +27,16 @@ export default function Navigation() {
                   textStyles={myFont.className}
                 />
               </Link>
-              
+
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none"
+                  className="p-2 rounded-md outline-none"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-white"
+                      className="w-6 h-6"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -49,7 +49,7 @@ export default function Navigation() {
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-white"
+                      className="w-6 h-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -72,7 +72,7 @@ export default function Navigation() {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <ul className="items-center justify-center space-y-0 md:flex md:space-x-6 md:space-y-0">
                 <motion.li
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -110,6 +110,9 @@ export default function Navigation() {
                     Contact
                   </Link>
                 </motion.li>
+                <li className="block py-2 pl-3 pr-4 text-zinc-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-zinc-400 md:dark:hover:text-white dark:hover:bg-zinc-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  <ThemeSwitcher />
+                </li>
               </ul>
             </div>
           </div>

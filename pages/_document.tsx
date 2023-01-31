@@ -1,6 +1,7 @@
 import { Head, Html, Main, NextScript } from 'next/document'
 import SpeedDialBtmRt from '../components/SpeedDialBtmRt';
 import Footer from '../components/Footer';
+import Script from 'next/script';
 
 export default function Document() {
   return (
@@ -12,6 +13,11 @@ export default function Document() {
         <SpeedDialBtmRt />
 
         <Footer />
+
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"
+          strategy="afterInteractive"
+        ></Script>
         <NextScript />
       </body>
     </Html>
