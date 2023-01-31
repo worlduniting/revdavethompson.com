@@ -10,46 +10,54 @@ export default function SpeedDialBtmRt() {
           id="speed-dial-menu-vertical"
           className="flex flex-col items-center hidden mb-4 space-y-2"
         >
-          {/* YouTube Button */}
-          <button
-            type="button"
-            data-tooltip-target="tooltip-youtube"
-            data-tooltip-placement="left"
-            className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-violet-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-violet-400 dark:text-violet-900 hover:bg-gray-50 dark:bg-zinc-300 dark:hover:bg-zinc-200 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+          {/* Instagram Button */}
+          <Link
+            href="https://youtube.com/revdavethompson"
+            rel="noopener noreferrer"
+            title="Rev. Dave's YouTube Channel"
+            target="_blank"
           >
-            {/* YouTube SVG Graphic */}
-            <svg
-              aria-hidden="true"
-              className="w-6 h-6"
-              fill="currentColor"
-              id="Layer_1"
-              viewBox="0 0 461 461"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlSpace="preserve"
+            {/* YouTube Button */}
+            <button
+              type="button"
+              data-tooltip-target="tooltip-youtube"
+              data-tooltip-placement="left"
+              className="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-violet-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-violet-400 dark:text-violet-900 hover:bg-gray-50 dark:bg-zinc-300 dark:hover:bg-zinc-200 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
             >
-              <g>
-                <path
-                  fillRule="evenodd"
-                  fill="currentColor"
-                  d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+              {/* YouTube SVG Graphic */}
+              <svg
+                aria-hidden="true"
+                className="w-6 h-6"
+                fill="currentColor"
+                id="Layer_1"
+                viewBox="0 0 461 461"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlSpace="preserve"
+              >
+                <g>
+                  <path
+                    fillRule="evenodd"
+                    fill="currentColor"
+                    d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
 		c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
 		C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
 		c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"
-                  clipRule="evenodd"
-                ></path>
-              </g>
-            </svg>
+                    clipRule="evenodd"
+                  ></path>
+                </g>
+              </svg>
 
-            <span className="sr-only">YouTube</span>
-          </button>
-          <div
-            id="tooltip-youtube"
-            role="tooltip"
-            className="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-          >
-            YouTube
-            <div className="tooltip-arrow" data-popper-arrow></div>
-          </div>
+              <span className="sr-only">YouTube</span>
+            </button>
+            <div
+              id="tooltip-youtube"
+              role="tooltip"
+              className="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            >
+              YouTube
+              <div className="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </Link>
 
           {/* Instagram Button */}
           <Link
