@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import Image from "next/image";
 import rdtAvatar from "../../public/svgs/rdt-avatar.svg";
 import { motion } from "framer-motion";
+import Featurettes from "../../components/Featurettes";
 
 export default function Home() {
   return (
@@ -52,7 +53,9 @@ export default function Home() {
         </div>
       </section>
 
-      <AboutRDT />
+      <Featurettes styles="bg-zinc-100" />
+
+      <AboutRDT styles="" />
     </>
   );
 }

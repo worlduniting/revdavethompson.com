@@ -24,11 +24,11 @@ export default function LearnMore() {
       {/* Main modal */}
       <div
         id="top-center-modal"
-        className="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden md:inset-0 h-modal md:h-full"
+        className="fixed top-0 left-0 right-0 z-50 hidden bg-zinc-300 w-full p-4 overflow-x-hidden md:inset-0 h-modal md:h-full"
       >
         <div className="relative w-full h-full max-w-2xl md:h-auto">
           {/* Modal content */}
-          <div className="relative bg-white rounded-lg shadow dark:bg-zinc-700">
+          <div className="relative bg-white rounded-lg shadow dark:bg-zinc-600">
             {/* Modal header */}
             <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-zinc-600">
               <div className="mt-5 ml-5 inline-flex items-center justify-left rounded-full bg-purple-100 text-purple-500 mb-5">
@@ -91,7 +91,7 @@ export default function LearnMore() {
                     aria-controls="accordion-flush-body-1"
                   >
                     <span className="text-2xl font-light">
-                      Corporate Presentations & Key Note Speaking
+                      Corporate & Conference Presentations
                     </span>
                     <svg
                       data-accordion-icon
@@ -114,16 +114,18 @@ export default function LearnMore() {
                   aria-labelledby="accordion-flush-heading-1"
                 >
                   <div className="py-5 overflow-y-auto h-[200px] font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="font-light text-xl mx-16 tracking-widest mb-4 text-zinc-500 dark:text-zinc-400">
+                    <p className="font-light text-xl mx-16 tracking-widest mb-4">
                       The single most{" "}
-                      <span className="text-3xl font-extralight">
+                      <span className="text-3xl text-violet-400 font-extralight">
                         important
                       </span>{" "}
                       asset of any business is{" "}
-                      <span className="text-3xl font-extralight  ">people</span>
+                      <span className="text-3xl font-extralight text-violet-400">
+                        people
+                      </span>
                       .
                     </p>
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
+                    <p className="mb-2 text-zinc-600 dark:text-zinc-300">
                       Our culture has become more divided than ever. The ability
                       to create and maintain a peaceful work environment is
                       critical to success. Rev. Dave can provide resources and
@@ -131,7 +133,7 @@ export default function LearnMore() {
                       human differences, and instead, to be galvanized around
                       their shared common ground---and your vision.
                     </p>
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
+                    <p className="mb-2 text-zinc-600 dark:text-zinc-300">
                       Rev. Dave brings an impressive resume of business know-how
                       to his engagements. Having run his own political
                       consulting firm for eight years, and worked with and in
@@ -139,11 +141,11 @@ export default function LearnMore() {
                       insight into the practical value of a peaceful and united
                       corporate culture and environment.
                     </p>
-                    <p className="text-zinc-500 font-medium dark:text-zinc-400">
+                    <p className="text-zinc-500 font-medium dark:text-zinc-300">
                       Check out this guide and learn how to{" "}
                       <a
-                        href="/docs/getting-started/introduction/"
-                        className="text-blue-600 dark:text-blue-500 hover:underline"
+                        href="#"
+                        className="text-violet-600 underline dark:text-violet-500 hover:text-violet-300"
                       >
                         get started
                       </a>{" "}
@@ -185,7 +187,7 @@ export default function LearnMore() {
                   aria-labelledby="accordion-flush-heading-2"
                 >
                   <div className="py-5 font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
+                    <p className="mb-2 text-zinc-600 dark:text-zinc-300">
                       Rev. Dave would love to speak to your small group.
                     </p>
                     <p className="text-zinc-500 dark:text-zinc-400">
@@ -228,24 +230,24 @@ export default function LearnMore() {
                   aria-labelledby="accordion-flush-heading-3"
                 >
                   <div className="py-5 font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="font-light text-xl mx-16 tracking-widest mb-4 text-zinc-500 dark:text-zinc-400">
+                    <p className="font-light text-xl mx-16 tracking-widest mb-4 text-zinc-500 dark:text-zinc-200">
                       Division in{" "}
-                      <span className="text-3xl font-extralight">
+                      <span className="text-3xl text-violet-500 font-extralight">
                         your congregation
                       </span>{" "}
                       can be difficult to navigate, but{" "}
-                      <span className="text-3xl font-extralight">
+                      <span className="text-3xl font-extralight text-violet-500">
                         Rev. Dave
                       </span>{" "}
                       can help you.
                     </p>
-                    <p className="mb-2 text-zinc-500 dark:text-zinc-400">
+                    <p className="mb-2 text-zinc-600 dark:text-zinc-300">
                       For over twenty years Rev. Dave has worked one-on-one with
                       ministers from all over the world and from many different
-                      persuasions. His practical experience in leading churches
-                      through divisive issues around faith and people, have
-                      given him an indespensible model for bring congregations
-                      away from division and back to their shared common ground.
+                      persuasions. His message of peace and his longevity of practical experience
+                       have
+                      given him an indespensible model for bringing your membership
+                      away from division and back to their shared common ground---and your shared values.
                     </p>
                   </div>
                 </div>

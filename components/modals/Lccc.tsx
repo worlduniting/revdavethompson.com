@@ -24,11 +24,11 @@ export default function Lccc() {
       {/* Main modal */}
       <div
         id="lccc-modal"
-        className="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+        className="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden bg-zinc-200 overflow-y-auto md:inset-0 h-modal md:h-full"
       >
         <div className="relative w-full h-full max-w-md md:h-auto">
           {/* Modal content */}
-          <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <div className="relative bg-white rounded-lg shadow dark:bg-gray-600">
             {/* Modal header */}
             <div className="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
               <div className="w-12 h-12 mt-8 inline-flex items-center justify-left rounded-full bg-purple-100 text-purple-500 mb-5">
@@ -39,9 +39,9 @@ export default function Lccc() {
                 />
               </div>
               <h3 className="pl-5 text-xl font-medium mt-5">
-                Leadership
+                Confidential
                 <br />
-                Confidential Care and Counsel
+                <span className="text-violet-400">Leadership</span> Care
               </h3>
               <button
                 type="button"
@@ -68,23 +68,25 @@ export default function Lccc() {
             <div className="p-6 space-y-6">
               <p className="text-base leading-relaxed">
                 Leadership can often be a lonely place. It can be tough to find
-                help with delicate matters. These difficult issues, whether organizational or
-                personal, can often carry drastic consequences, just by talking
-                about them. Rev. Dave, however, has served as a confidential resource
-                for leaders in these circumstances, providing a safe space to
-                talk openly and comfortably about subjects that can have
-                serious, embarrassing, or potentially incriminating
-                consequences.
+                help with delicate matters. These difficult issues, whether
+                organizational or personal, can often carry drastic
+                consequences, just by talking about them.
+              </p>
+              <p className="text-base leading-relaxed">
+                Rev. Dave has served as a confidential resource for leaders in
+                these circumstances, providing a safe space to talk openly and
+                comfortably about subjects that can have serious, embarrassing,
+                or potentially incriminating consequences.
               </p>
               <p className="text-base leading-relaxed">
                 As a licensed and ordained minister in the State of California,
-                your conversations with Rev. Dave can remain
-                private, under the protection of Clergy Privelege.
+                your conversations with Rev. Dave can remain private, under the
+                protection of Clergy Privelege.
               </p>
               <p className="text-base leading-relaxed">
                 If you need help with a difficult or delicate issue you (or your
                 organization) are wrestling with, please contact Rev. Dave on
-                his Contact Page. Be sure to select "Private" so your message
+                his Contact Page. Be sure to select "Confidential" so your message
                 will only be seen by Rev. Dave himself.
               </p>
             </div>

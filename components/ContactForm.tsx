@@ -17,8 +17,9 @@ export default function ContactForm() {
                 Contact Rev. Dave
               </h3>
               <p className="mt-3 text-sm">
-                All communications will be handled privately with the utmost of care. We will never
-                share your information with anyone without your expressed permission.
+                All communications will be handled privately with the utmost of
+                care. We will never share your information with anyone without
+                your expressed permission.
               </p>
             </div>
           </div>
@@ -65,8 +66,8 @@ export default function ContactForm() {
                             target="_blank"
                           >
                             as per California Law
-                          </Link>.{" "}
-                          Rev. Dave will contact you as soon as he is able.
+                          </Link>
+                          . Rev. Dave will contact you as soon as he is able.
                         </p>
                       </div>
                     </div>
@@ -239,14 +240,14 @@ export default function ContactForm() {
                             <p className="mt-2 text-sm">
                               Requests for press releases, commentary or other
                               items.
-                              <br />
+                              {/* <br />
                               <Link
                                 className="dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400 text-green-500"
                                 href="/about-rev-dave-thompson/"
                               >
                                 Learn more{" "}
                                 <ChevronDoubleRightIcon className="inline-block w-4 h-4" />
-                              </Link>
+                              </Link> */}
                             </p>
                           </div>
                         </div>
@@ -274,14 +275,14 @@ export default function ContactForm() {
                             <p className="mt-2 text-sm">
                               Rev. Dave would be honored to speak or present for
                               your group.
-                              <br />
+                              {/* <br />
                               <Link
                                 className="dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400 text-green-500"
-                                href="/about-rev-dave-thompson/#speaking"
+                                href="/about-rev-dave-thompson/"
                               >
                                 Learn more{" "}
                                 <ChevronDoubleRightIcon className="inline-block w-4 h-4" />
-                              </Link>
+                              </Link> */}
                             </p>
                           </div>
                         </div>
@@ -309,14 +310,14 @@ export default function ContactForm() {
                             <p className="mt-2 text-sm">
                               For leaders who need to speak confidentially about
                               delicate or divisive issues they are facing.
-                              <br />
+                              {/* <br />
                               <Link
                                 className="dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400 text-green-500"
-                                href="/about-rev-dave-thompson/#cccl"
+                                href="/about-rev-dave-thompson/"
                               >
-                                Learn more
+                                Learn more{" "}
                                 <ChevronDoubleRightIcon className="inline-block w-4 h-4" />
-                              </Link>
+                              </Link> */}
                             </p>
                           </div>
                         </div>

@@ -22,23 +22,23 @@ export default function FrontCTA() {
           our world
         </motion.h4>
         <div className="flex px-10 flex-wrap">
-          <div className="w-full pt-10 mb-10 lg:px-10 md:w-1/2">
+          <div className="w-full pt-10 mb-10 text-center md:text-left lg:px-10 md:w-1/2">
             <motion.p
-              className="ml-5 tracking-snug font-extralight text-xl"
+              className="ml-5 tracking-snug font-light text-xl"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1.5, delay: 3 }}
             >
               not{" "}
-              <span className="text-zinc-400 text-4xl lg:text-3xl pr-1">
+              <span className="text-blue-600 text-4xl lg:text-3xl pr-1">
                 div
               </span>
-              <span className="text-5xl md:text-5xl text-zinc-300 pr-1">|</span>
-              <span className="text-zinc-400 text-4xl lg:text-3xl">ided</span>
+              <span className="text-5xl md:text-5xl text-zinc-600 pr-1">|</span>
+              <span className="text-red-600 text-4xl lg:text-3xl">ided</span>
             </motion.p>
             <motion.p
-              className="mb-5 text-right pr-4 tracking-snug font-extralight text-xl"
+              className="mb-5 text-center md:text-right pr-4 tracking-snug font-light text-xl"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -55,29 +55,29 @@ export default function FrontCTA() {
               <span className="text-4xl md:text-4xl text-lime-400">n</span>
               <span className="text-4xl md:text-4xl text-yellow-400">c</span>
               <span className="text-4xl md:text-4xl text-rose-400">e</span>
-              <span className="text-4xl md:text-4xl text-orange-400">s</span>,
+              <span className="text-4xl md:text-4xl text-orange-400">s</span>
             </motion.p>
             <motion.p
-              className="mb-1 ml-5 text-xl font-extralight"
+              className="mb-1 ml-5 text-xl font-light"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 2, delay: 5 }}
             >
               but{" "}
-              <span className="text-4xl text-violet-400 font-extralight">
+              <span className="text-4xl text-violet-500 font-light">
                 connected
               </span>
             </motion.p>
             <motion.p
-              className="text-xl font-extralight text-right"
+              className="text-xl font-light text-center md:text-right"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 2, delay: 5 }}
             >
               by our
-              <span className="text-4xl lg:text-4xl text-violet-400 font-extralight">
+              <span className="text-4xl lg:text-4xl text-violet-500 font-light">
                 {" "}
                 common ground.
               </span>

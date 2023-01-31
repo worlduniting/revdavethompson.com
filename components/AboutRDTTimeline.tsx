@@ -14,9 +14,15 @@ import Human from "../public/book-cover-sq.jpg";
 import CHBS from "../public/chbs-crcl.png";
 import Link from "next/link";
 
-export default function AboutRDTTimeline() {
+type Props = {
+  styles: string;
+};
+
+export default function AboutRDTTimeline({styles}:Props) {
   return (
-    <section className="mx-auto py-20 px-6 p-10 bg-zinc-100 dark:bg-zinc-800">
+    <section
+      className={`mx-auto py-20 px-6 p-10 ${styles}`}
+    >
       <h1 className="text-right text-4xl tracking-tight font-medium text-zinc-900 dark:text-white">
         Rev. &nbsp;Dave&rsquo;s Journey.
       </h1>

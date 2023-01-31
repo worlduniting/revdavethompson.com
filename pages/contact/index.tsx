@@ -24,30 +24,16 @@ export default function Home() {
               />
             </div>
             <div className="px-16 pt-5 md:px-10 w-full md:w-1/2 max-w-screen-xl lg:pt-5 lg:pl-20">
-              <div className="max-w-screen-lg text-zinc-500 sm:text-lg lg:pl-[10%] md:text-sm dark:text-zinc-400">
+              <div className="max-w-screen-lg text-zinc-500 sm:text-lg lg:pl-[10%] md:text-xl dark:text-zinc-400">
                 <motion.p
                   className="tracking-snug mb-5"
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                 >
-                  <span className="text-violet-400 text-xl font-extralight">
+                  <span className="text-violet-500 text-2xl font-light">
                     Rev. Dave
                   </span>{" "}
-                  has spent over twenty years building common ground between our
-                  most divided of social groups and issues.
-                </motion.p>
-                <motion.p
-                  className="tracking-snug mb-5"
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                >
-                  His long experience provided him the opportunity to develop
-                  his{" "}
-                  <strong className="text-violet-400 text-xl font-extralight">
-                    HUMAN Ethic &trade;
-                  </strong>
-                  &nbsp;, a set of real-world, field-tested rules of conduct
-                  necessary for finding the common ground that creates peace.
+                  is excited to hear from you and looks forward to joining you in your effort to find and achieve your vision, regardless of the circumstances you are facing.
                 </motion.p>
               </div>
             </div>
@@ -55,7 +41,7 @@ export default function Home() {
         </section>
 
         {/* Contact Form */}
-        <section className="pt-10 px-5 lg:px-10 bg-zinc-100 dark:bg-zinc-800">
+        <section className="pt-10 mb-20 px-5 lg:px-10 bg-zinc-100 dark:bg-zinc-800">
           <ContactForm />
         </section>
       </>

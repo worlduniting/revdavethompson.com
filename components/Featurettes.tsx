@@ -11,10 +11,14 @@ import Speaking from "./modals/Speaking";
 import Lccc from "./modals/Lccc";
 import { motion } from "framer-motion";
 
-export default function Featurettes() {
+type Props = {
+  styles: string;
+}
+
+export default function Featurettes({styles}:Props) {
   return (
     <>
-      <section className="body-front">
+      <section className={`body-front ${styles}`}>
         <div className="container items-center py-24 mx-auto flex flex-wrap">
           {/* Speaking & Engagements Feature */}
           <motion.div
@@ -46,10 +50,10 @@ export default function Featurettes() {
                 <p className="leading-relaxed mb-5 text-base">
                   Rev. Dave has spoken with audiences large and small, bringing
                   a message of common ground and peace to his listeners. His
-                  disarming nature continues to leave his audiences with expanded
-                  horizons and a renewed hope for peace. Rev. Dave would
-                  welcoming the opportunity to speak at your college, business,
-                  church, organization, or small group.
+                  disarming nature continues to leave his audiences with
+                  expanded horizons and a renewed hope for peace. Rev. Dave
+                  would welcoming the opportunity to speak at your college,
+                  business, church, organization, or small group.
                 </p>
                 <Speaking />
               </div>
@@ -82,26 +86,34 @@ export default function Featurettes() {
                 <h2 className="text-3xl pb-3 border-solid border-b-2 border-zinc-300 title-font font-medium mb-3">
                   Confidential
                   <br />
-                  Leadership Care
+                  <span className="text-violet-400">Leadership</span> Care
                 </h2>
                 <p className="leading-relaxed text-base mb-3 px-16">
-                  It can be <span className="text-2xl font-light">lonely</span>{" "}
+                  It can be{" "}
+                  <span className="text-2xl font-light text-violet-400">
+                    lonely
+                  </span>{" "}
                   living in the{" "}
-                  <span className="text-2xl font-light">glass house</span> of{" "}
-                  <span className="text-2xl font-light">leadership</span>.
+                  <span className="text-2xl font-light text-violet-400">
+                    glass house
+                  </span>{" "}
+                  of{" "}
+                  <span className="text-2xl font-light text-violet-400">
+                    leadership
+                  </span>
+                  .
                 </p>
                 <p className="leading-relaxed text-base mb-3">
                   When everyone is looking to you for help with their problems,
                   where do you look for help with yours?
                 </p>
                 <p className="leading-relaxed text-base mb-5">
-                  For over twenty years, Rev Dave has served as a
-                  confidential resource for leaders around the world: CEO's,
-                  Ministers, Political Leaders, and more. His unbiased
-                  understanding and long experience with divisive and delicate
-                  issues, has helped leaders navigate these challenging waters,
-                  whether within their organization, or in their own personal
-                  lives.
+                  For over twenty years, Rev Dave has served as a confidential
+                  resource for leaders around the world: CEO's, Ministers,
+                  Political Leaders, and more. His unbiased understanding and
+                  long experience with divisive and delicate issues, has helped
+                  leaders navigate these challenging waters, whether within
+                  their organization, or in their own personal lives.
                 </p>
                 <Lccc />
               </div>
@@ -149,7 +161,9 @@ export default function Featurettes() {
               </div>
               <div className="flex-grow">
                 <h2 className="text-3xl pb-3 border-solid border-b-2 border-zinc-300 title-font font-medium mb-3">
-                  Rev. Dave&rsquo;s<br /> YouTube Channel
+                  Rev. Dave&rsquo;s
+                  <br /> <span className="text-violet-400">YouTube</span>{" "}
+                  Channel
                 </h2>
                 <p className="leading-relaxed text-base mb-5">
                   Rev Dave began his YouTube channel in the hopes of providing
@@ -171,7 +185,9 @@ export default function Featurettes() {
                   >
                     Visit
                   </button>
-                  <span className="ml-5 dark:text-violet-400">(Don't forget to Subscribe!)</span>
+                  <span className="ml-5 dark:text-violet-400">
+                    (Don't forget to Subscribe!)
+                  </span>
                 </a>
               </div>
             </div>
