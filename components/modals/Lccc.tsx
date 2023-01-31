@@ -84,10 +84,13 @@ export default function Lccc() {
                 protection of Clergy Privelege.
               </p>
               <p className="text-base leading-relaxed">
-                If you need help with a difficult or delicate issue you (or your
-                organization) are wrestling with, please contact Rev. Dave on
-                his Contact Page. Be sure to select "Confidential" so your message
-                will only be seen by Rev. Dave himself.
+                If you need help with a difficult or delicate issue, please
+                contact Rev. Dave on his {" "}
+                <Link className="text-violet-500 hover:text-violet-300" href={"/contact/"}>
+                  Contact Page
+                </Link>
+                . Be sure to select "Confidential" so your message will only be
+                seen by Rev. Dave himself.
               </p>
             </div>
             {/* Modal footer */}

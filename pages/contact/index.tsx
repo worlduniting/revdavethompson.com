@@ -30,10 +30,10 @@ export default function Home() {
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                 >
-                  <span className="text-violet-500 text-2xl font-light">
+                  <span className="text-violet-500 tracking-wide text-2xl font-light">
                     Rev. Dave
                   </span>{" "}
-                  is excited to hear from you and looks forward to joining you in your effort to find and achieve your vision, regardless of the circumstances you are facing.
+                  is excited to hear from you and is looking forward to <span className="text-violet-500 tracking-wide text-2xl font-light">serving</span> you in whatever circumstances you are facing.
                 </motion.p>
               </div>
             </div>

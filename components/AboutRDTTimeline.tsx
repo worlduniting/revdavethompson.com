@@ -27,7 +27,7 @@ export default function AboutRDTTimeline({styles}:Props) {
         Rev. &nbsp;Dave&rsquo;s Journey.
       </h1>
       <h2 className="text-right mb-10 text-2xl tracking-widest font-extralight text-zinc-900 dark:text-white">
-        Stops along the road
+        stops along the road
       </h2>
       <div className="container mx-auto w-full h-full">
         <div className="relative wrap overflow-hidden h-full">

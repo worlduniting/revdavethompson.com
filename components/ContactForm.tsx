@@ -59,7 +59,7 @@ export default function ContactForm() {
                           communication within the context of "Clergy Penitent
                           Privelege",{" "}
                           <Link
-                            className="hover:text-gray-300 text-violet-400 dark:text-violet-300"
+                            className="hover:text-gray-400 underline text-violet-400 dark:text-violet-300"
                             href="https://www.easylawlookup.com/California-Law/Evidence-Code/pg-25/_easylookup.blp?data=EVIDENCE&sidfw=&site=EASY&location=78232&spon=&stype=P&sterm=+&smode=AND&sexact=ON&pgno=25&par=683&dlevel=2#par_683"
                             rel="noopener noreferrer"
                             title="California Clergy Penitent Privelege"
