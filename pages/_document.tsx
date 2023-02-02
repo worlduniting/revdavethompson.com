@@ -7,7 +7,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta name="robots" content="all" />
+        
       </Head>
       <body className="dark:bg-zinc-700 dark:text-white text-zinc-700">
         <Main />

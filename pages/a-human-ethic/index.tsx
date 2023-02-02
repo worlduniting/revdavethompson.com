@@ -4,16 +4,61 @@ import rdtAvatar from "../../public/svgs/rdt-avatar.svg";
 import Image from "next/image";
 import HUMANTimeline from "../../components/HUMANTimeline";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        {/* Primary Meta Tags */}
+        <title>Rev. Dave Thompson's HUMAN EThic&trade;</title>
+        <meta name="title" content="Rev. Dave Thompson Human Ethic &trade;" />
+        <meta
+          name="description"
+          content="Rev. Dave Thompson's HUMAN Ethic&trade; is an ethical model for building Human common ground and peace."
+        />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="Rev. Dave's HUMAN Ethic&trade;" />
+        <meta
+          property="og:description"
+          content="Rev. Dave's HUMAN Ethic&trade; is an ethical model for building Human common ground and peace."
+        />
+        <meta
+          property="og:image"
+          content="https://revdavethompson.com/social-media.jpg"
+        />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta
+          property="twitter:title"
+          content="Rev. Dave Thompson's HUMAN Ethic&trade;"
+        />
+        <meta
+          property="twitter:description"
+          content="Rev. Dave's HUMAN Ethic&trade; is an ethical model for building Human common ground and peace."
+        />
+        <meta
+          property="twitter:image"
+          content="https://revdavethompson.com/social-media.jpg"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addAHumanEthicMetaJsonLd()}
+          key="product-jsonld"
+        />
+      </Head>
       <Header />
 
       {/* A HUMAN Ethic */}
       <section className="pt-10 px-5 pb-20 lg:px-10">
         <h1 className="pr-10 ml-5 text-3xl tracking-tight font-bold">
-          A <span className="text-violet-400 text-4xl ">HUMAN</span> Ethic.
+          A <span className="text-violet-400 text-4xl ">HUMAN</span> Ethic
+          <span className="text-2xl">&trade;</span>.
         </h1>
         <div className="flex items-center flex-wrap">
           <div className="px-16 pt-5 mt-10 md:px-10 w-full md:w-1/2 max-w-screen-xl lg:pt-5 lg:pl-20">
@@ -41,6 +86,7 @@ export default function Home() {
                   <span className="text-3xl lg:text-5xl dark:text-zinc-200">
                     no nations
                   </span>
+                  ,
                 </span>
               </motion.p>
               <motion.p
@@ -137,4 +183,39 @@ export default function Home() {
       <HUMANTimeline />
     </>
   );
+}
+
+  {/* JSON-LD */}
+function addAHumanEthicMetaJsonLd() {
+  return {
+    __html: `{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Rev. Dave Thompson",
+  "url": "https://revdavethompson.com",
+  "image": "https://revdavethompson.com/social-media.jpg",
+  "sameAs": [
+    "https://facebook.com/revdavethompson",
+    "https://twitter.com/revdavethompson",
+    "https://instagram.com/revdavethompson",
+    "https://youtube.com/revdavethompson",
+    "https://linkedin.com/revdavethompson"
+  ],
+  "jobTitle": "CIVIL HUMAN Servant",
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": [
+      "Trinity Bible College,
+      "Northwest University",
+      "Gordon Conwell Theological Seminary",
+    ],
+  }
+  "worksFor": {
+    ["@type": "Organization",
+    "name": "World Uniting International"],
+    ["@type": "EducationalOrganization]
+  }
+}
+  `,
+  };
 }

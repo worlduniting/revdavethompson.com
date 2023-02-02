@@ -8,10 +8,54 @@ import Image from "next/image";
 import rdtAvatar from "../../public/svgs/rdt-avatar.svg";
 import { motion } from "framer-motion";
 import Featurettes from "../../components/Featurettes";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        {/* Primary Meta Tags */}
+        <title>About Rev. Dave Thompson</title>
+        <meta
+          name="title"
+          content="Rev. Dave Thompson is an author, speaker, and CIVIL HUMAN Servant building human common ground and peace."
+        />
+        <meta
+          name="description"
+          content="Rev. Dave Thompson is an author, speaker, and CIVIL HUMAN Servant building human common ground and peace."
+        />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="About Rev. Dave Thompson" />
+        <meta
+          property="og:description"
+          content="Rev. Dave Thompson is an author, speaker, and CIVIL HUMAN Servant building human common ground and peace."
+        />
+        <meta
+          property="og:image"
+          content="https://revdavethompson.com/social-media.jpg"
+        />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="About Rev. Dave Thompson" />
+        <meta
+          property="twitter:description"
+          content="Rev. Dave Thompson is an author, speaker, and CIVIL HUMAN Servant building human common ground and peace."
+        />
+        <meta
+          property="twitter:image"
+          content="https://revdavethompson.com/social-media.jpg"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addAboutMetaJsonLd()}
+          key="product-jsonld"
+        />
+      </Head>
       <Header />
 
       <section>
@@ -58,4 +102,40 @@ export default function Home() {
       <AboutRDT styles="" />
     </>
   );
+}
+{
+  /* JSON-LD */
+}
+function addAboutMetaJsonLd() {
+  return {
+    __html: `{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Rev. Dave Thompson",
+  "url": "https://revdavethompson.com",
+  "image": "https://revdavethompson.com/social-media.jpg",
+  "sameAs": [
+    "https://facebook.com/revdavethompson",
+    "https://twitter.com/revdavethompson",
+    "https://instagram.com/revdavethompson",
+    "https://youtube.com/revdavethompson",
+    "https://linkedin.com/revdavethompson"
+  ],
+  "jobTitle": "CIVIL HUMAN Servant",
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": [
+      "Trinity Bible College,
+      "Northwest University",
+      "Gordon Conwell Theological Seminary",
+    ],
+  }
+  "worksFor": {
+    ["@type": "Organization",
+    "name": "World Uniting International"],
+    ["@type": "EducationalOrganization]
+  }
+}
+  `,
+  };
 }
