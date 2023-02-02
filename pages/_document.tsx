@@ -6,7 +6,9 @@ import Script from 'next/script';
 export default function Document() {
   return (
     <Html>
-      <Head></Head>
+      <Head>
+        <meta name="robots" content="all" />
+      </Head>
       <body className="dark:bg-zinc-700 dark:text-white text-zinc-700">
         <Main />
 

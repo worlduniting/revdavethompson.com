@@ -7,12 +7,17 @@ import Featurettes from "../components/Featurettes";
 import HtmlHead from "../components/HtmlHead";
 import FrontCTA from "../components/FrontCTA";
 import Header from "../components/Header";
+import Head from "next/head";
+import HomeMeta from "../components/meta/HomeMeta";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
+    <Head>
+      <HomeMeta />
+    </Head>
       <HtmlHead />
       <Header />
 
