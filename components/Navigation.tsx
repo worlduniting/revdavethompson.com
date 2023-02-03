@@ -6,10 +6,6 @@ import ThemeSwitcher from "./ThemeSwitcher";
 import Head from "next/head";
 import { useState } from "react";
 
-{
-  /* https://larainfo.com/blogs/create-responsive-navbar-menu-in-next-js-with-tailwind-css */
-}
-
 const myFont = localFont({ src: "../fonts/Zayne.ttf", preload: true });
 
 export default function Navigation() {

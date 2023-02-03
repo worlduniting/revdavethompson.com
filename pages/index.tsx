@@ -4,11 +4,9 @@ import Testimonials from "../components/Testimonials";
 import { Inter } from "@next/font/google";
 import Script from "next/script";
 import Featurettes from "../components/Featurettes";
-import HtmlHead from "../components/HtmlHead";
 import FrontCTA from "../components/FrontCTA";
 import Header from "../components/Header";
 import Head from "next/head";
-import HomeMeta from "../components/meta/HomeMeta";
 
 const inter = Inter({ subsets: ["latin"] });
 

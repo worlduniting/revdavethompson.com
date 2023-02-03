@@ -8,10 +8,4 @@ const nextConfig = {
   },
 }
 
-{/*
-    nextScriptWorkers for Third Party Scripts
-    Doc Ref:
-      https://nextjs.org/docs/basic-features/script#offloading-scripts-to-a-web-worker-experimental
-*/}
-
 module.exports = nextConfig
