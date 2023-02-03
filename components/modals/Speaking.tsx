@@ -228,7 +228,7 @@ export default function LearnMore() {
                   id="accordion-flush-body-3"
                   className="hidden"
                   aria-labelledby="accordion-flush-heading-3"
-                >
+                > 
                   <div className="py-5 font-light border-b border-zinc-200 dark:border-zinc-700">
                     <p className="font-light text-xl mx-16 tracking-widest mb-4 text-zinc-500 dark:text-zinc-200">
                       Division in{" "}
