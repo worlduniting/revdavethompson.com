@@ -25,6 +25,7 @@ export default function Header() {
             style={{
               objectFit: "cover",
             }}
+            priority
           />
         </motion.div>
       </header>

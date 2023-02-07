@@ -65,7 +65,6 @@ export default function Home() {
           key="product-jsonld"
         />
       </Head>
-      <HtmlHead />
       <Header />
 
       {/* Call To Action */}
