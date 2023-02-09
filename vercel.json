@@ -5,7 +5,7 @@
             "has": [
                 {
                     "type": "host",
-                    "value": "blog.revdavethompson.com"
+                    "value": "blog"
                 }
             ],
             "destination": "https://blog-3q36ravv0-revdavethompson.vercel.app/:path*"
