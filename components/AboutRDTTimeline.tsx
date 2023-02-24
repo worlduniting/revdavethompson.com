@@ -23,23 +23,23 @@ export default function AboutRDTTimeline({styles}:Props) {
     <section
       className={`mx-auto py-20 px-6 p-10 ${styles}`}
     >
-      <h1 className="text-right text-4xl tracking-tight font-medium text-zinc-900 dark:text-white">
-        Rev. &nbsp;Dave&rsquo;s Journey.
+      <h1 className="text-4xl font-medium tracking-tight text-right text-zinc-500 dark:text-zinc-900">
+        Rev. &nbsp;Dave&rsquo;s Journey
       </h1>
-      <h2 className="text-right mb-10 text-2xl tracking-widest font-extralight text-zinc-900 dark:text-white">
-        stops along the road
+      <h2 className="mb-10 text-2xl font-light tracking-widest text-right text-zinc-800 dark:text-zinc-900">
+        Stops along the way
       </h2>
-      <div className="container mx-auto w-full h-full">
-        <div className="relative wrap overflow-hidden h-full">
+      <div className="container w-full h-full mx-auto">
+        <div className="relative h-full overflow-hidden wrap">
           {/* Timeline Line */}
           <div className="left-14 border-2-2 absolute border-opacity-20 md:left-[50%] border-zinc-700 dark:border-zinc-500 h-full border"></div>
 
           {/* Northwest University */}
-          <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">
+          <div className="flex w-full mb-20 md:justify-between md:items-center md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full"
                 src={Nu}
                 alt="Northwest University Logo"
               />
@@ -50,13 +50,13 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="ml-5 md:ml-6 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-[41%] px-4 py-4"
             >
-              <h3 className="mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-black text-tight">
                 1995
               </h3>
-              <h4 className="font-bold text-2xl text-violet-600">
+              <h4 className="text-2xl font-bold text-violet-600">
                 Ministry Education
               </h4>
-              <h5 className="text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-black">
                 Northwest University
               </h5>
               <p className="leading-snug tracking-wide">
@@ -68,11 +68,11 @@ export default function AboutRDTTimeline({styles}:Props) {
           </div>
 
           {/* Gordon Conwell Theological Seminary */}
-          <div className="mb-20 flex md:justify-between md:flex-row-reverse md:items-center w-full right-timeline md:left-timeline">
+          <div className="flex w-full mb-20 md:justify-between md:flex-row-reverse md:items-center right-timeline md:left-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full shadow"
                 src={Gordon}
                 alt="Gordon Conwell Theological Seminary Logo"
               />
@@ -83,16 +83,16 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="md:mr-2 ml-5 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-[38%] px-4 py-4"
             >
-              <h3 className="md:text-right mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-black md:text-right text-tight">
                 1998
               </h3>
-              <h4 className="font-bold text-2xl text-violet-600 md:text-right">
+              <h4 className="text-2xl font-bold text-violet-600 md:text-right">
                 Theology Education
               </h4>
-              <h5 className="md:text-right text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-black md:text-right">
                 Gordon Conwell Theological Seminary
               </h5>
-              <p className="md:text-right leading-snug tracking-wide">
+              <p className="leading-snug tracking-wide md:text-right">
                 Rev. Dave continued his ministry studies, entering a Masters in
                 Theology program, forcusing on conflict resolution.
                 Additionally, he worked to receive a Certificate in Religion &
@@ -103,11 +103,11 @@ export default function AboutRDTTimeline({styles}:Props) {
           </div>
 
           {/* Admin Northwest University */}
-          <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">
+          <div className="flex w-full mb-20 md:justify-between md:items-center md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full shadow"
                 src={Nu}
                 alt="Northwest University Logo"
               />
@@ -118,13 +118,13 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="ml-5 md:ml-6 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-[41%] px-4 py-4"
             >
-              <h3 className="mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-black text-tight">
                 2000
               </h3>
-              <h4 className="font-bold text-xl text-violet-600">
+              <h4 className="text-xl font-bold text-violet-600">
                 Education Administration
               </h4>
-              <h5 className="text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-black">
                 Northwest University
               </h5>
               <p className="leading-snug tracking-wide">
@@ -138,11 +138,11 @@ export default function AboutRDTTimeline({styles}:Props) {
           </div>
 
           {/* Policorp Corporation */}
-          <div className="mb-20 flex md:justify-between md:flex-row-reverse md:items-center w-full right-timeline md:left-timeline">
+          <div className="flex w-full mb-20 md:justify-between md:flex-row-reverse md:items-center right-timeline md:left-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full shadow"
                 src={Poli}
                 alt="Policorp Corporation Logo"
               />
@@ -153,26 +153,26 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="md:mr-2 ml-5 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-[38%] px-4 py-4"
             >
-              <h3 className="text-right mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-right text-black text-tight">
                 2003
               </h3>
-              <h4 className="font-bold text-2xl text-violet-600 text-right">
+              <h4 className="text-2xl font-bold text-right text-violet-600">
                 Political Consulting
               </h4>
-              <h5 className="text-right text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-right text-black">
                 Policorp Corporation <span className="text-sm">(Founder)</span>
               </h5>
-              <p className="text-right leading-snug tracking-wide mb-3">
+              <p className="mb-3 leading-snug tracking-wide text-right">
                 In an effort to broaden his understand of social conflict, Rev.
                 Dave left formal ministry and launched a political consulting
                 firm.
               </p>
-              <p className="text-right leading-snug tracking-wide mb-3">
+              <p className="mb-3 leading-snug tracking-wide text-right">
                 During these years he was fortunate to work with local, state,
                 national and global political campaigns, managing communications
                 and public relations.
               </p>
-              <p className="text-right leading-snug tracking-wide">
+              <p className="leading-snug tracking-wide text-right">
                 Finding he had a knack for software, he also built one of the
                 first open source software platforms to manage political
                 campaigns.
@@ -181,11 +181,11 @@ export default function AboutRDTTimeline({styles}:Props) {
           </div>
 
           {/* Starbucks Corporation */}
-          <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">
+          <div className="flex w-full mb-20 md:justify-between md:items-center md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full shadow"
                 src={Starbucks}
                 alt="Starbucks Corporation Logo"
               />
@@ -196,13 +196,13 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="ml-5 md:ml-6 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-[41%] px-4 py-4"
             >
-              <h3 className="mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-black text-tight">
                 2007
               </h3>
-              <h4 className="font-bold text-2xl text-violet-600">
+              <h4 className="text-2xl font-bold text-violet-600">
                 Fortune 500 & Tech
               </h4>
-              <h5 className="text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-black">
                 Starbucks Corporation
               </h5>
               <p className="leading-snug tracking-wide">
@@ -215,11 +215,11 @@ export default function AboutRDTTimeline({styles}:Props) {
           </div>
 
           {/* Disclaimer CD */}
-          <div className="mb-20 flex md:justify-between md:flex-row-reverse md:items-center w-full right-timeline md:left-timeline">
+          <div className="flex w-full mb-20 md:justify-between md:flex-row-reverse md:items-center right-timeline md:left-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full shadow"
                 src={Disc}
                 alt="Disclaimer CD Cover"
               />
@@ -230,16 +230,16 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="md:mr-2 ml-5 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-[38%] px-4 py-4"
             >
-              <h3 className="text-right mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-right text-black text-tight">
                 2009
               </h3>
-              <h4 className="font-bold text-2xl text-violet-600 text-right">
+              <h4 className="text-2xl font-bold text-right text-violet-600">
                 Recorded Musician
               </h4>
-              <h5 className="text-right text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-right text-black">
                 Disclaimer CD
               </h5>
-              <p className="text-right leading-snug tracking-wide">
+              <p className="leading-snug tracking-wide text-right">
                 Rev. Dave has spent most of his life performing music
                 (piano/singing) in venues of all sorts. In 2009 he decided to
                 check a box off his bucket list, and put out a cd of his own
@@ -256,11 +256,11 @@ export default function AboutRDTTimeline({styles}:Props) {
           </div>
 
           {/* Over Coffee Book */}
-          <div className="mb-20 flex md:justify-between md:items-center w-full md:right-timeline">
+          <div className="flex w-full mb-20 md:justify-between md:items-center md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full shadow"
                 src={OcBook}
                 alt="Over Coffee Book Cover"
               />
@@ -271,16 +271,16 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="ml-5 md:ml-6 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-[41%] px-4 py-4"
             >
-              <h3 className="mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-black text-tight">
                 2010
               </h3>
-              <h4 className="font-bold text-2xl text-violet-600">
+              <h4 className="text-2xl font-bold text-violet-600">
                 Author & Speaker
               </h4>
-              <h5 className="text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-black">
                 Over Coffee Book
               </h5>
-              <p className="leading-snug tracking-wide mb-3">
+              <p className="mb-3 leading-snug tracking-wide">
                 After years of reseach and reflection, Rev. Dave returned to
                 formal ministry, launching his first book,{" "}
                 <Link
@@ -305,11 +305,11 @@ export default function AboutRDTTimeline({styles}:Props) {
           </div>
 
           {/* YouTube CHBS */}
-          <div className="mb-20 flex md:justify-between md:flex-row-reverse md:items-center w-full right-timeline md:left-timeline">
+          <div className="flex w-full mb-20 md:justify-between md:flex-row-reverse md:items-center right-timeline md:left-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full shadow"
                 src={CHBS}
                 alt="CIVIL HUMAN Bible Study"
               />
@@ -320,16 +320,16 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="md:mr-2 ml-5 md:ml-0 order-1 bg-zinc-200 dark:bg-zinc-400 md:flex-wrap rounded-lg shadow-xl w-2/3 md:w-[38%] px-4 py-4"
             >
-              <h3 className="text-right mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-right text-black text-tight">
                 2019
               </h3>
-              <h4 className="font-bold text-2xl text-violet-600 text-right">
+              <h4 className="text-2xl font-bold text-right text-violet-600">
                 YouTube Personality
               </h4>
-              <h5 className="text-right text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-right text-black">
                 CIVIL HUMAN Bible STudy
               </h5>
-              <p className="text-right leading-snug tracking-wide">
+              <p className="leading-snug tracking-wide text-right">
                 Rev. Dave launched his{" "}
                 <Link
                   href="http://youtube.com/revdavethompson"
@@ -354,11 +354,11 @@ export default function AboutRDTTimeline({styles}:Props) {
           </div>
 
           {/* Becoming Human Book */}
-          <div className="flex md:justify-between md:items-center w-full md:right-timeline">
+          <div className="flex w-full md:justify-between md:items-center md:right-timeline">
             <div className="order-1 md:w-5/12"></div>
-            <div className="z-20 ml-4 flex md:items-center order-1 bg-violet-500 shadow-xl md:w-28 md:h-28 w-20 h-20 border-solid border-4 border-zinc-300 rounded-full">
+            <div className="z-20 flex order-1 w-20 h-20 ml-4 border-4 border-solid rounded-full shadow-xl md:items-center bg-violet-500 md:w-28 md:h-28 border-zinc-300">
               <Image
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                className="h-auto max-w-full align-middle border-none rounded-full shadow"
                 src={Human}
                 alt="Becoming Human Book Cover"
               />
@@ -369,13 +369,13 @@ export default function AboutRDTTimeline({styles}:Props) {
               transition={{ duration: 1 }}
               className="ml-5 md:ml-6 order-1 bg-zinc-200 dark:bg-zinc-400 rounded-lg shadow-xl w-2/3 md:w-[41%] px-4 py-4"
             >
-              <h3 className="mb-3 text-black font-light text-2xl text-tight">
+              <h3 className="mb-3 text-2xl font-light text-black text-tight">
                 2023
               </h3>
-              <h4 className="font-bold text-2xl text-violet-600">
+              <h4 className="text-2xl font-bold text-violet-600">
                 Author & Speaker
               </h4>
-              <h5 className="text-black font-light text-xl mb-5">
+              <h5 className="mb-5 text-xl font-light text-black">
                 Becoming HUMAN
               </h5>
               <p className="leading-snug tracking-wide">

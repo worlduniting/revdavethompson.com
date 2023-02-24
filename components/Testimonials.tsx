@@ -18,9 +18,9 @@ export default function Testimonials() {
           className="text-4xl text-right dark:text-white"
           whileHover={{ scale: 1.05 }}
         >
-          In their own words.
+          In their own words
         </motion.h2>
-        <div className="grid items-right gap-4 xl:grid-cols-5">
+        <div className="grid gap-4 items-right xl:grid-cols-5">
           <div className="max-w-2xl mx-auto my-8 space-y-4 text-right xl:col-span-2 xl:text-left"></div>
           <div className="p-6 xl:col-span-3">
             <div className="grid gap-4 md:grid-cols-2">
@@ -37,7 +37,7 @@ export default function Testimonials() {
                     &ldquo;A disarming and surprisingly genuine voice.&rdquo;
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
-                    <NewspaperIcon className="font-bold w-10 h-10 p-2 text-white text-small bg-center bg-cover rounded-full bg-green-500" />
+                    <NewspaperIcon className="w-10 h-10 p-2 font-bold text-white bg-green-500 bg-center bg-cover rounded-full text-small" />
                     <div>
                       <p className="text-lg font-semibold text-gray-800">
                         Vipp Jaswal
@@ -64,7 +64,7 @@ export default function Testimonials() {
                     grace and peaceful dialogue.&rdquo;
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
-                    <BookOpenIcon className="w-10 h-10 p-2 text-white text-small bg-center bg-cover rounded-full bg-green-500" />
+                    <BookOpenIcon className="w-10 h-10 p-2 text-white bg-green-500 bg-center bg-cover rounded-full text-small" />
                     <div>
                       <p className="text-lg font-semibold">Timothy Kurek</p>
                       <p className="text-sm text-gray-600">
@@ -93,7 +93,7 @@ export default function Testimonials() {
                     today...[Rev. Dave] is working to build some bridges.&rdquo;
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
-                    <NewspaperIcon className="w-10 h-10 p-2 text-white text-small bg-center bg-cover rounded-full bg-green-500" />
+                    <NewspaperIcon className="w-10 h-10 p-2 text-white bg-green-500 bg-center bg-cover rounded-full text-small" />
                     <div>
                       <p className="text-lg font-semibold">Matt Nagle</p>
                       <p className="text-sm text-gray-600">
@@ -118,7 +118,7 @@ export default function Testimonials() {
                   <div className="flex items-center mt-4 space-x-4">
                     <PlusIcon
                       path="stroke-width: 4"
-                      className="w-10 h-10 p-2 text-white bg-center bg-cover rounded-full bg-green-500"
+                      className="w-10 h-10 p-2 text-white bg-green-500 bg-center bg-cover rounded-full"
                     />
                     <div>
                       <p className="text-lg font-semibold">
@@ -146,7 +146,7 @@ export default function Testimonials() {
                     conversation starter.&rdquo;
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
-                    <PlusIcon className="w-10 h-10 p-2 text-white text-small bg-center bg-cover rounded-full bg-green-500" />
+                    <PlusIcon className="w-10 h-10 p-2 text-white bg-green-500 bg-center bg-cover rounded-full text-small" />
                     <div>
                       <p className="text-lg font-semibold">
                         Rev. Martin W. Eldred

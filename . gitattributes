@@ -1,0 +1,5 @@
+# Protected website config
+.env filter=git-crypt diff=git-crypt
+
+# Config file for Vercel DNS
+vercel.json filter=git-crypt diff=git-crypt

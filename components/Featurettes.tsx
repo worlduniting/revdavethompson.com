@@ -19,35 +19,36 @@ export default function Featurettes({styles}:Props) {
   return (
     <>
       <section className={`body-front ${styles}`}>
-        <div className="container items-center py-24 mx-auto flex flex-wrap">
+        {console.log(styles)}
+        <div className="container flex flex-wrap items-center py-24 mx-auto text-zinc-900 dark:text-white">
           {/* Speaking & Engagements Feature */}
           <motion.div
-            className="mb-5 w-full inline-flex items-center justify-center md:w-1/2"
+            className="inline-flex items-center justify-center w-full mb-5 md:w-1/2"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 100, scale: 1 }}
             transition={{ duration: 1 }}
           >
             <Image
-              alt="Rev Dave shaking hand with Presidential candidate."
-              className="object-center w-300 h-300 border-solid border-8 border-zinc-300 rounded-full"
+              alt="Rev Dave shaking hands with Presidential candidate Pete Buttigieg."
+              className="object-center border-8 border-solid rounded-full w-300 h-300 border-zinc-300"
               src={allSaints}
             />
           </motion.div>
-          <div className="flex flex-col flex-wrap lg:py-6 mb-10 md:w-1/2 md:pl-12 md:text-left text-center">
-            <div className="flex flex-col mb-10 md:items-start items-center">
-              <div className="w-20 h-20 border-solid border-4 border-zinc-300 inline-flex items-center justify-center rounded-full bg-white text-purple-500 mb-5">
+          <div className="flex flex-col flex-wrap mb-10 text-center lg:py-6 md:w-1/2 md:pl-12 md:text-left">
+            <div className="flex flex-col items-center mb-10 md:items-start">
+              <div className="inline-flex items-center justify-center w-20 h-20 mb-5 text-purple-500 bg-white border-4 border-solid rounded-full border-zinc-300">
                 <Image
                   alt="Speaking Icon"
-                  className="object-center rounded-full w-16 h-16"
+                  className="object-center w-16 h-16 rounded-full"
                   src={speaking}
                 />
               </div>
-              <div className="flex-grow items-center">
-                <h2 className="text-3xl pb-3 border-solid md:border-b-2 border-zinc-300 title-font font-medium mb-3">
+              <div className="items-center flex-grow">
+                <h2 className="pb-3 mb-3 text-3xl font-medium border-solid md:border-b-2 border-zinc-300 title-font">
                   Speaking
                   <br />& Engagements
                 </h2>
-                <p className="leading-relaxed mb-5 text-base">
+                <p className="mb-5 text-base leading-relaxed">
                   Rev. Dave has spoken with audiences large and small, bringing
                   a message of common ground and peace to his listeners. His
                   disarming nature continues to leave his audiences with
@@ -62,33 +63,33 @@ export default function Featurettes({styles}:Props) {
 
           {/* Leadership CCC Feature */}
           <motion.div
-            className="mb-5 w-full inline-flex items-center justify-center md:w-1/2"
+            className="inline-flex items-center justify-center w-full mb-5 md:w-1/2"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 100, scale: 1 }}
             transition={{ duration: 1 }}
           >
             <Image
               alt="Rev Dave shaking hand with Presidential candidate."
-              className="object-center w-300 h-300 border-solid border-8 border-zinc-300 rounded-full"
+              className="object-center border-8 border-solid rounded-full w-300 h-300 border-zinc-300"
               src={poliSmall}
             />
           </motion.div>
-          <div className="flex flex-col flex-wrap mt-14 lg:py-6 mb-10 md:w-1/2 md:pl-12 md:text-left text-center">
-            <div className="flex flex-col mb-10 md:items-start items-center">
-              <div className="w-20 h-20 border-solid border-4 border-zinc-300 inline-flex items-center justify-center rounded-full bg-white text-purple-500 mb-5">
+          <div className="flex flex-col flex-wrap mb-10 text-center mt-14 lg:py-6 md:w-1/2 md:pl-12 md:text-left">
+            <div className="flex flex-col items-center mb-10 md:items-start">
+              <div className="inline-flex items-center justify-center w-20 h-20 mb-5 text-purple-500 bg-white border-4 border-solid rounded-full border-zinc-300">
                 <Image
                   alt="Leadership Help Icon"
-                  className="object-center rounded-full w-16 h-16"
+                  className="object-center w-16 h-16 rounded-full"
                   src={help}
                 />
               </div>
               <div className="flex-grow">
-                <h2 className="text-3xl pb-3 border-solid border-b-2 border-zinc-300 title-font font-medium mb-3">
+                <h2 className="pb-3 mb-3 text-3xl font-medium border-b-2 border-solid border-zinc-300 title-font">
                   Confidential
                   <br />
                   <span className="text-violet-400">Leadership</span> Care
                 </h2>
-                <p className="leading-relaxed text-base mb-3 px-16">
+                <p className="px-16 mb-3 text-base leading-relaxed">
                   It can be{" "}
                   <span className="text-2xl font-light text-violet-400">
                     lonely
@@ -103,11 +104,11 @@ export default function Featurettes({styles}:Props) {
                   </span>
                   .
                 </p>
-                <p className="leading-relaxed text-base mb-3">
+                <p className="mb-3 text-base leading-relaxed">
                   When everyone is looking to you for help with their problems,
                   where do you look for help with yours?
                 </p>
-                <p className="leading-relaxed text-base mb-5">
+                <p className="mb-5 text-base leading-relaxed">
                   For over twenty years, Rev Dave has served as a confidential
                   resource for leaders around the world: CEO's, Ministers,
                   Political Leaders, and more. His unbiased understanding and
@@ -122,20 +123,20 @@ export default function Featurettes({styles}:Props) {
 
           {/* Youtube Channel Feature */}
           <motion.div
-            className="mb-5 w-full inline-flex items-center justify-center md:w-1/2"
+            className="inline-flex items-center justify-center w-full mb-5 md:w-1/2"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 100, scale: 1 }}
             transition={{ duration: 1 }}
           >
             <Image
               alt="Rev Dave YouTube Channel Cover Image with Rev Dave at table"
-              className="object-center w-300 h-300 border-solid border-8 border-zinc399 rounded-full"
+              className="object-center border-8 border-solid rounded-full w-300 h-300 border-zinc399"
               src={YouTube}
             />
           </motion.div>
-          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 md:w-1/2 md:pl-12 md:text-left text-center">
-            <div className="flex flex-col mb-10 md:items-start items-center">
-              <div className="w-20 h-20 border-solid border-4 border-zinc-300 inline-flex items-center justify-center rounded-full bg-white text-purple-500 mb-5">
+          <div className="flex flex-col flex-wrap -mb-10 text-center lg:py-6 md:w-1/2 md:pl-12 md:text-left">
+            <div className="flex flex-col items-center mb-10 md:items-start">
+              <div className="inline-flex items-center justify-center w-20 h-20 mb-5 text-purple-500 bg-white border-4 border-solid rounded-full border-zinc-300">
                 {/* YouTube SVG Graphic */}
                 <svg
                   aria-hidden="true"
@@ -160,19 +161,19 @@ export default function Featurettes({styles}:Props) {
                 </svg>
               </div>
               <div className="flex-grow">
-                <h2 className="text-3xl pb-3 border-solid border-b-2 border-zinc-300 title-font font-medium mb-3">
+                <h2 className="pb-3 mb-3 text-3xl font-medium border-b-2 border-solid border-zinc-300 title-font">
                   Rev. Dave&rsquo;s
                   <br /> <span className="text-violet-400">YouTube</span>{" "}
                   Channel
                 </h2>
-                <p className="leading-relaxed text-base mb-5">
+                <p className="mb-5 text-base leading-relaxed">
                   Rev Dave began his YouTube channel in the hopes of providing
                   his audience with a uniquely HUMAN perspective, focusing on
                   only those things that we as humans hold together as common
                   ground.
                 </p>
                 <a
-                  className="text-purple-500 inline-flex items-center"
+                  className="inline-flex items-center text-purple-500"
                   href="https://youtube.com/revdavethompson"
                   target="_blank"
                   rel="noreferrer"
@@ -185,7 +186,7 @@ export default function Featurettes({styles}:Props) {
                   >
                     Visit
                   </button>
-                  <span className="ml-5 dark:text-violet-400">
+                  <span className="ml-5 text-zinc-400">
                     (Don't forget to Subscribe!)
                   </span>
                 </a>

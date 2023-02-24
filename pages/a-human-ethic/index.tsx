@@ -55,16 +55,16 @@ export default function Home() {
       <Header />
 
       {/* A HUMAN Ethic */}
-      <section className="pt-10 px-5 pb-20 lg:px-10">
-        <h1 className="pr-10 ml-5 text-3xl tracking-tight font-bold">
-          A <span className="text-violet-400 text-4xl ">HUMAN</span> Ethic
-          <span className="text-2xl">&trade;</span>.
+      <section className="px-5 pt-10 pb-20 lg:px-10">
+        <h1 className="pr-10 ml-5 text-3xl font-bold tracking-tight">
+          A <span className="text-4xl text-violet-400 ">HUMAN</span> Ethic
+          <span className="text-2xl"><sup>&trade;</sup></span>
         </h1>
-        <div className="flex items-center flex-wrap">
-          <div className="px-16 pt-5 mt-10 md:px-10 w-full md:w-1/2 max-w-screen-xl lg:pt-5 lg:pl-20">
+        <div className="flex flex-wrap items-center">
+          <div className="w-full max-w-screen-xl px-16 pt-5 mt-10 md:px-10 md:w-1/2 lg:pt-5 lg:pl-20">
             <div className="max-w-screen-lg text-zinc-500 sm:text-lg lg:pl-[10%] md:text-sm dark:text-zinc-400">
               <motion.p
-                className="tracking-snug font-extralight text-xl"
+                className="text-xl font-light tracking-snug"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2 }}
@@ -76,12 +76,12 @@ export default function Home() {
                 world,
               </motion.p>
               <motion.p
-                className="text-right mb-2"
+                className="mb-2 text-right"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2, delay: 2 }}
               >
-                <span className="text-xl font-extralight">
+                <span className="text-xl font-light">
                   where there are{" "}
                   <span className="text-3xl lg:text-5xl dark:text-zinc-200">
                     no nations
@@ -90,21 +90,21 @@ export default function Home() {
                 </span>
               </motion.p>
               <motion.p
-                className="text-xl font-extralight"
+                className="text-xl font-light"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2, delay: 4 }}
               >
-                <span className="text-3xl lg:text-5xl text-right mb-2 dark:text-zinc-200">
+                <span className="mb-2 text-3xl text-right lg:text-5xl dark:text-zinc-200">
                   whose culture
                 </span>{" "}
                 will we{" "}
-                <span className="text-3xl lg:text-5xl text-right mb-2 dark:text-zinc-200">
+                <span className="mb-2 text-3xl text-right lg:text-5xl dark:text-zinc-200">
                   follow
                 </span>
               </motion.p>
               <motion.p
-                className="text-xl font-extralight text-right"
+                className="text-xl font-light text-right"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2, delay: 6 }}
@@ -113,10 +113,10 @@ export default function Home() {
                 <span className="text-3xl lg:text-5xl dark:text-zinc-200">
                   find
                 </span>
-                <span className="text-center text-3xl lg:text-5xl text-violet-500"></span>
+                <span className="text-3xl text-center lg:text-5xl text-violet-500"></span>
               </motion.p>
               <motion.p
-                className="text-center tracking-wide font-medium mt-2 text-3xl lg:text-4xl text-violet-500"
+                className="mt-2 text-3xl font-medium tracking-wide text-center lg:text-4xl text-violet-500"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2, delay: 8 }}
@@ -125,9 +125,9 @@ export default function Home() {
               </motion.p>
             </div>
           </div>
-          <div className="w-full inline-flex justify-center mt-10 md:w-1/2">
+          <div className="inline-flex justify-center w-full mt-10 md:w-1/2">
             <Image
-              className="object-center w-300 h-300 border-solid border-8 border-zinc-300 rounded-full"
+              className="object-center border-8 border-solid rounded-full w-300 h-300 border-zinc-300"
               src={earth}
               alt="Earth with Big Question Mark on it"
             />
@@ -136,11 +136,11 @@ export default function Home() {
       </section>
 
       {/* RDT HUMAN Intro */}
-      <section className="pt-10 px-5 pb-16 lg:px-10 bg-zinc-100 dark:bg-zinc-800">
-        <h1 className="pr-10 text-3xl tracking-tight font-bold text-right">
-          A <span className="text-violet-400 text-4xl ">HUMAN</span> Servant.
+      <section className="px-5 pt-10 pb-16 lg:px-10 bg-zinc-100 dark:bg-zinc-800">
+        <h1 className="pr-10 text-3xl font-bold tracking-tight text-right">
+          A <span className="text-4xl text-violet-400 ">HUMAN</span> Servant
         </h1>
-        <div className="flex items-center flex-wrap">
+        <div className="flex flex-wrap items-center">
           <motion.div
             className="w-full px-10 pt-16 md:w-1/2"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -148,15 +148,15 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
             <Image
-              className="object-center w-300 h-300 border-solid border-8 border-zinc-300 rounded-full"
+              className="object-center border-8 border-solid rounded-full w-300 h-300 border-zinc-300"
               src={rdtAvatar}
               alt="Earth with Big Question Mark on it"
             />
           </motion.div>
-          <div className="px-16 pt-5 md:px-10 w-full md:w-1/2 max-w-screen-xl lg:pt-5 lg:pl-20">
+          <div className="w-full max-w-screen-xl px-16 pt-5 md:px-10 md:w-1/2 lg:pt-5 lg:pl-20">
             <div className="max-w-screen-lg text-zinc-500 sm:text-lg lg:pl-[10%] md:text-sm dark:text-zinc-400">
               <motion.p
-                className="tracking-snug mb-3 font-extralight text-xl"
+                className="mb-3 text-xl font-light tracking-snug"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
               >
@@ -165,7 +165,7 @@ export default function Home() {
                 divided of social groups and issues.
               </motion.p>
               <motion.p
-                className="tracking-snug font-extralight text-xl"
+                className="text-xl font-light tracking-snug"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
               >

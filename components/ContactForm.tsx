@@ -35,19 +35,19 @@ export default function ContactForm() {
                 value="ySErMBBgL8ZKlRsXYqDaZg=="
               />
               <div className="overflow-hidden shadow sm:rounded-md">
-                <div className="bg-zinc-200 dark:bg-zinc-500 px-4 py-5 sm:p-6">
+                <div className="px-4 py-5 bg-zinc-200 dark:bg-zinc-500 sm:p-6">
                   <div className="mt-4 space-y-4">
                     <div className="flex items-start">
-                      <div className="flex h-5 items-center">
+                      <div className="flex items-center h-5">
                         <input
                           id="insightly_private__c"
                           name="private__c"
                           type="checkbox"
                           value="true"
-                          className="mt-2 h-4 w-4 rounded border-gray-300 text-violet-600 focus:ring-violet-500"
+                          className="w-4 h-4 mt-2 border-gray-300 rounded text-violet-600 focus:ring-violet-500"
                         />
                       </div>
-                      <div className="ml-4 w-full">
+                      <div className="w-full ml-4">
                         <label
                           htmlFor="insightly_private__c"
                           className="font-medium"
@@ -59,7 +59,7 @@ export default function ContactForm() {
                           communication within the context of "Clergy Penitent
                           Privelege",{" "}
                           <Link
-                            className="hover:text-gray-400 underline text-violet-400 dark:text-violet-300"
+                            className="underline hover:text-gray-400 text-violet-400 dark:text-violet-300"
                             href="https://www.easylawlookup.com/California-Law/Evidence-Code/pg-25/_easylookup.blp?data=EVIDENCE&sidfw=&site=EASY&location=78232&spon=&stype=P&sterm=+&smode=AND&sexact=ON&pgno=25&par=683&dlevel=2#par_683"
                             rel="noopener noreferrer"
                             title="California Clergy Penitent Privelege"
@@ -67,13 +67,13 @@ export default function ContactForm() {
                           >
                             as per California Law
                           </Link>
-                          . Rev. Dave will contact you as soon as he is able.
+                          . <br /><br />Rev. Dave will contact you as soon as he is able.
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="mt-5 grid grid-cols-6 gap-6">
+                  <div className="grid grid-cols-6 gap-6 mt-5">
                     <div className="col-span-6 sm:col-span-3">
                       <label
                         htmlFor="insightly_firstName"
@@ -85,7 +85,7 @@ export default function ContactForm() {
                         id="insightly_firstName"
                         name="FirstName"
                         type="text"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
+                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
                       />
                     </div>
 
@@ -100,7 +100,7 @@ export default function ContactForm() {
                         type="text"
                         name="LastName"
                         id="insightly_lastName"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
+                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
                       />
                     </div>
 
@@ -115,7 +115,7 @@ export default function ContactForm() {
                         id="insightly_Email"
                         name="email"
                         type="text"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
+                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
                       />
                     </div>
 
@@ -130,7 +130,7 @@ export default function ContactForm() {
                         id="insightly_Phone"
                         name="phone"
                         type="text"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
+                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
                       />
                     </div>
 
@@ -145,7 +145,7 @@ export default function ContactForm() {
                         id="insightly_organization"
                         name="OrganizationName"
                         type="text"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
+                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
                       />
                     </div>
 
@@ -160,7 +160,7 @@ export default function ContactForm() {
                         id="insightly_Description"
                         name="Description"
                         rows={8}
-                        className="form-textarea mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
+                        className="block w-full mt-1 border-gray-300 rounded-md shadow-sm form-textarea focus:border-violet-500 focus:ring-violet-500 sm:text-sm"
                       />
                     </div>
                   </div>
@@ -172,7 +172,7 @@ export default function ContactForm() {
                         Options for more information:
                       </legend>
                       <div
-                        className="block text-x font-medium contents"
+                        className="block font-medium text-x contents"
                         aria-hidden="true"
                       >
                         <span className="text-puple">
@@ -182,15 +182,15 @@ export default function ContactForm() {
                       </div>
 
                       {/* News & Info Checkbox */}
-                      <div className="space-y-4 mt-3 ml-5">
+                      <div className="mt-3 ml-5 space-y-4">
                         <div className="flex items-start">
-                          <div className="flex h-5 items-center">
+                          <div className="flex items-center h-5">
                             <input
                               id="insightly_news_updates__c"
                               name="news_updates__c"
                               type="checkbox"
                               value="true"
-                              className="mt-1 h-4 w-4 rounded border-gray-300 text-violet-600 focus:ring-violet-500"
+                              className="w-4 h-4 mt-1 border-gray-300 rounded text-violet-600 focus:ring-violet-500"
                             />
                           </div>
                           <div className="ml-3">
@@ -218,16 +218,16 @@ export default function ContactForm() {
                       </div>
 
                       {/* Press & Media Checkbox */}
-                      <div className="space-y-4 mt-3 ml-5">
+                      <div className="mt-3 ml-5 space-y-4">
                         <div className="flex items-start">
-                          <div className="flex h-5 items-center">
+                          <div className="flex items-center h-5">
                             <p></p>
                             <input
                               id="insightly_pressMedia__c"
                               name="pressMedia__c"
                               type="checkbox"
                               value="true"
-                              className="mt-1 h-4 w-4 rounded border-gray-300 text-violet-600 focus:ring-violet-500"
+                              className="w-4 h-4 mt-1 border-gray-300 rounded text-violet-600 focus:ring-violet-500"
                             />
                           </div>
                           <div className="ml-3">
@@ -242,7 +242,7 @@ export default function ContactForm() {
                               items.
                               {/* <br />
                               <Link
-                                className="dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400 text-green-500"
+                                className="text-green-500 dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400"
                                 href="/about-rev-dave-thompson/"
                               >
                                 Learn more{" "}
@@ -254,15 +254,15 @@ export default function ContactForm() {
                       </div>
 
                       {/* Speaking Checkbox */}
-                      <div className="space-y-4 mt-3 ml-5">
+                      <div className="mt-3 ml-5 space-y-4">
                         <div className="flex items-start">
-                          <div className="flex h-5 items-center">
+                          <div className="flex items-center h-5">
                             <input
                               id="insightly_engagements__c"
                               name="engagements__c"
                               type="checkbox"
                               value="true"
-                              className="mt-1 h-4 w-4 rounded border-gray-300 text-violet-600 focus:ring-violet-500"
+                              className="w-4 h-4 mt-1 border-gray-300 rounded text-violet-600 focus:ring-violet-500"
                             />
                           </div>
                           <div className="ml-3">
@@ -277,7 +277,7 @@ export default function ContactForm() {
                               your group.
                               {/* <br />
                               <Link
-                                className="dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400 text-green-500"
+                                className="text-green-500 dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400"
                                 href="/about-rev-dave-thompson/"
                               >
                                 Learn more{" "}
@@ -289,15 +289,15 @@ export default function ContactForm() {
                       </div>
 
                       {/* Leadership Confidential Care and Counsel (CCCL) */}
-                      <div className="space-y-4 mt-3 ml-5">
+                      <div className="mt-3 ml-5 space-y-4">
                         <div className="flex items-start">
-                          <div className="flex h-5 items-center">
+                          <div className="flex items-center h-5">
                             <input
                               id="insightly_lccc__c"
                               name="lccc__c"
                               type="checkbox"
                               value="true"
-                              className="mt-1 h-4 w-4 rounded border-gray-300 text-violet-600 focus:ring-violet-500"
+                              className="w-4 h-4 mt-1 border-gray-300 rounded text-violet-600 focus:ring-violet-500"
                             />
                           </div>
                           <div className="ml-3">
@@ -312,7 +312,7 @@ export default function ContactForm() {
                               delicate or divisive issues they are facing.
                               {/* <br />
                               <Link
-                                className="dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400 text-green-500"
+                                className="text-green-500 dark:text-green-300 dark:hover:text-zinc-300 hover:text-zinc-400"
                                 href="/about-rev-dave-thompson/"
                               >
                                 Learn more{" "}
@@ -338,10 +338,10 @@ export default function ContactForm() {
                   name="LeadSource"
                   value="393245"
                 />
-                <div className="dark:bg-zinc-400 bg-zinc-300 px-4 py-3 text-right sm:px-6">
+                <div className="px-4 py-3 text-right dark:bg-zinc-400 bg-zinc-300 sm:px-6">
                   <button
                     type="submit"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-violet-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-violet-500 dark:hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-violet-600 hover:bg-violet-500 dark:hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2"
                   >
                     Send
                   </button>

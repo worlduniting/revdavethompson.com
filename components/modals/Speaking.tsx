@@ -9,7 +9,7 @@ export default function LearnMore() {
   return (
     <>
       {/* Speaking Modal */}
-      <div className="block space-y-4 md:flex md:space-y-0 md:space-x-4">
+      <div className="block space-y-4 dark:text-white md:flex md:space-y-0 md:space-x-4">
         {/* Modal toggle */}
         <button
           data-modal-target="top-center-modal"
@@ -24,21 +24,21 @@ export default function LearnMore() {
       {/* Main modal */}
       <div
         id="top-center-modal"
-        className="fixed top-0 left-0 right-0 z-50 hidden bg-zinc-300 w-full p-4 overflow-x-hidden md:inset-0 h-modal md:h-full"
+        className="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden bg-zinc-300 md:inset-0 h-modal md:h-full"
       >
         <div className="relative w-full h-full max-w-2xl md:h-auto">
           {/* Modal content */}
           <div className="relative bg-white rounded-lg shadow dark:bg-zinc-600">
             {/* Modal header */}
             <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-zinc-600">
-              <div className="mt-5 ml-5 inline-flex items-center justify-left rounded-full bg-purple-100 text-purple-500 mb-5">
+              <div className="inline-flex items-center mt-5 mb-5 ml-5 text-purple-500 bg-purple-100 rounded-full justify-left">
                 <Image
                   alt="Speaking Icon"
                   className="object-center rounded-full w-14 h-14"
                   src={speak}
                 />
               </div>
-              <h1 className="pl-5 text-2xl font-medium mt-5">
+              <h1 className="pl-5 mt-5 text-2xl font-medium">
                 Speaking
                 <br /> & Engagements
               </h1>
@@ -65,7 +65,7 @@ export default function LearnMore() {
             </div>
 
             {/* Modal body */}
-            <div className="p-10 space-y-6 leading-relaxed">
+            <div className="p-10 space-y-6 leading-relaxed dark:text-white">
               <p>
                 Rev. Dave has been speaking before audiences for over thirty
                 years. His natural ease provides a disarming and engaging
@@ -85,7 +85,7 @@ export default function LearnMore() {
                 <h2 id="accordion-flush-heading-1 text-2xl">
                   <button
                     type="button"
-                    className="flex items-center justify-between w-full py-5 font-medium text-left text-zinc-500 border-b border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
+                    className="flex items-center justify-between w-full py-5 font-medium text-left border-b text-zinc-500 border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
                     data-accordion-target="#accordion-flush-body-1"
                     aria-expanded="true"
                     aria-controls="accordion-flush-body-1"
@@ -114,13 +114,13 @@ export default function LearnMore() {
                   aria-labelledby="accordion-flush-heading-1"
                 >
                   <div className="py-5 overflow-y-auto h-[200px] font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="font-light text-xl mx-16 tracking-widest mb-4">
+                    <p className="mx-16 mb-4 text-xl font-light tracking-widest">
                       The single most{" "}
-                      <span className="text-3xl text-violet-400 font-extralight">
+                      <span className="text-3xl font-light text-violet-400">
                         important
                       </span>{" "}
                       asset of any business is{" "}
-                      <span className="text-3xl font-extralight text-violet-400">
+                      <span className="text-3xl font-light text-violet-400">
                         people
                       </span>
                       .
@@ -141,11 +141,11 @@ export default function LearnMore() {
                       insight into the practical value of a peaceful and united
                       corporate culture and environment.
                     </p>
-                    <p className="text-zinc-500 font-medium dark:text-zinc-300">
+                    <p className="font-medium text-zinc-500 dark:text-zinc-300">
                       Check out this guide and learn how to{" "}
                       <a
                         href="#"
-                        className="text-violet-600 underline dark:text-violet-500 hover:text-violet-300"
+                        className="underline text-violet-600 dark:text-violet-500 hover:text-violet-300"
                       >
                         get started
                       </a>{" "}
@@ -158,7 +158,7 @@ export default function LearnMore() {
                 <h2 id="accordion-flush-heading-2">
                   <button
                     type="button"
-                    className="flex items-center justify-between w-full py-5 font-medium text-left text-zinc-500 border-b border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
+                    className="flex items-center justify-between w-full py-5 font-medium text-left border-b text-zinc-500 border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
                     data-accordion-target="#accordion-flush-body-2"
                     aria-expanded="false"
                     aria-controls="accordion-flush-body-2"
@@ -201,7 +201,7 @@ export default function LearnMore() {
                 <h2 id="accordion-flush-heading-3">
                   <button
                     type="button"
-                    className="flex items-center justify-between w-full py-5 font-medium text-left text-zinc-500 border-b border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
+                    className="flex items-center justify-between w-full py-5 font-medium text-left border-b text-zinc-500 border-zinc-200 dark:border-zinc-700 dark:text-zinc-400"
                     data-accordion-target="#accordion-flush-body-3"
                     aria-expanded="false"
                     aria-controls="accordion-flush-body-3"
@@ -230,13 +230,13 @@ export default function LearnMore() {
                   aria-labelledby="accordion-flush-heading-3"
                 > 
                   <div className="py-5 font-light border-b border-zinc-200 dark:border-zinc-700">
-                    <p className="font-light text-xl mx-16 tracking-widest mb-4 text-zinc-500 dark:text-zinc-200">
+                    <p className="mx-16 mb-4 text-xl font-light tracking-widest text-zinc-500 dark:text-zinc-200">
                       Division in{" "}
-                      <span className="text-3xl text-violet-500 font-extralight">
+                      <span className="text-3xl font-light text-violet-500">
                         your congregation
                       </span>{" "}
                       can be difficult to navigate, but{" "}
-                      <span className="text-3xl font-extralight text-violet-500">
+                      <span className="text-3xl font-light text-violet-500">
                         Rev. Dave
                       </span>{" "}
                       can help you.
@@ -254,7 +254,7 @@ export default function LearnMore() {
               </div>
             </div>
             {/* Modal footer */}
-            <div className="flex items-center justify-end p-6 space-x-2 border-t border-zinc-200 rounded-b dark:border-zinc-600">
+            <div className="flex items-center justify-end p-6 space-x-2 border-t rounded-b border-zinc-200 dark:border-zinc-600">
               <Link className="" href={"/contact/"}>
                 <button
                   data-modal-hide="defaultModal"
