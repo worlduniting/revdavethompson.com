@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "blog"
+                }
+            ],
+            "destination": "https://blog-3q36ravv0-revdavethompson.vercel.app/:path*"
+        }
+    ]
+}
