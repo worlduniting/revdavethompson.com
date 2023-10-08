@@ -383,14 +383,6 @@ export default function AboutRDTTimeline({styles}:Props) {
                 account, facing death in the grips of a deadly mountaintop
                 storm, forcing him to wrestle with the inescapable rules about
                 our shared human truth.
-                <br />
-                <br />
-                In the midst of each new challenge, we get a unique look into
-                the spiritual and philisophic struggles of a Christian Minister
-                as he stands on the precipace of death. With each new
-                development we begin to see him pulling back layer after layer
-                of his beliefs, until he is left to wrestle with only those
-                truths that we as human beings must acknowledge.
               </p>
             </motion.div>
           </div>

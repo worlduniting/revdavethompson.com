@@ -101,7 +101,9 @@ export default function Home() {
 
       <AboutRDT styles="bg-zinc-100" />
 
+      {/* Featurettes */}
       <Featurettes styles="" />
+      
     </>
   );
 }
